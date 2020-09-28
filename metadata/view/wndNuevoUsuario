@@ -1,0 +1,295 @@
+{
+    "type": "Ext.window.Window",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "closable": false,
+        "designer|userAlias": "wndnuevousuario",
+        "designer|userClassName": "wndNuevoUsuario",
+        "id": "wndNuevoUsuario",
+        "layout": "fit",
+        "modal": true,
+        "title": "Nuevo Usuario",
+        "width": 450
+    },
+    "configAlternates": {
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "id": "string",
+        "layout": "string",
+        "modal": "boolean",
+        "title": "string",
+        "width": "auto",
+        "closable": "boolean"
+    },
+    "name": "MyWindow",
+    "designerId": "09459c3b-d132-4702-a686-974a6bff3a3d",
+    "viewControllerInstanceId": "d4af8ff2-d266-4593-a073-1f2f3d939ff4",
+    "viewModelInstanceId": "beef783c-be71-4035-bb68-e400ff7905f9",
+    "cn": [
+        {
+            "type": "Ext.form.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "bodyPadding": 10,
+                "container|align": "center",
+                "id": "frmNuevoUsuario",
+                "layout": "vbox",
+                "title": ""
+            },
+            "configAlternates": {
+                "bodyPadding": "auto",
+                "container|align": "string",
+                "id": "string",
+                "layout": "string",
+                "title": "string"
+            },
+            "name": "MyForm",
+            "designerId": "287a95a0-8cd8-4663-975e-b068a8080a09",
+            "cn": [
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "allowBlank": false,
+                        "fieldLabel": "Usuario",
+                        "labelWidth": 60,
+                        "name": "usuario"
+                    },
+                    "configAlternates": {
+                        "allowBlank": "boolean",
+                        "fieldLabel": "string",
+                        "labelWidth": "number",
+                        "name": "string"
+                    },
+                    "name": "MyTextField",
+                    "designerId": "ac87d1cc-367d-4df7-9ce3-b8097bdc69f1"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "allowBlank": false,
+                        "fieldLabel": "Nombre",
+                        "labelWidth": 60,
+                        "name": "nombre"
+                    },
+                    "configAlternates": {
+                        "allowBlank": "boolean",
+                        "fieldLabel": "string",
+                        "labelWidth": "number",
+                        "name": "string"
+                    },
+                    "name": "MyTextField1",
+                    "designerId": "08d2e9b6-1224-43c1-be7e-3c8928a65f79"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "allowBlank": false,
+                        "fieldLabel": "Apellido",
+                        "labelWidth": 60,
+                        "name": "apellido"
+                    },
+                    "configAlternates": {
+                        "allowBlank": "boolean",
+                        "fieldLabel": "string",
+                        "labelWidth": "number",
+                        "name": "string"
+                    },
+                    "name": "MyTextField2",
+                    "designerId": "c0118a30-df68-4e05-b1ee-85a43a1c7b19"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "allowBlank": false,
+                        "fieldLabel": "Cédula",
+                        "labelWidth": 60,
+                        "name": "cedula"
+                    },
+                    "configAlternates": {
+                        "allowBlank": "boolean",
+                        "fieldLabel": "string",
+                        "labelWidth": "number",
+                        "name": "string"
+                    },
+                    "name": "MyTextField3",
+                    "designerId": "1fe88f3d-c88d-4ce1-bba6-74385a5b83e5"
+                },
+                {
+                    "type": "Ext.form.FieldContainer",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "container|align": "middle",
+                        "container|pack": "center",
+                        "fieldLabel": "",
+                        "height": 37,
+                        "layout": "hbox",
+                        "layout|flex": null,
+                        "width": 400
+                    },
+                    "configAlternates": {
+                        "container|align": "string",
+                        "container|pack": "string",
+                        "fieldLabel": "string",
+                        "height": "auto",
+                        "layout": "string",
+                        "layout|flex": "number",
+                        "width": "auto"
+                    },
+                    "name": "MyFieldContainer",
+                    "designerId": "c346f628-de5e-4c21-a7f7-0198d902689b",
+                    "cn": [
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "id": "btnUsuarioCancelar",
+                                "text": "Cancelar"
+                            },
+                            "configAlternates": {
+                                "id": "string",
+                                "text": "string"
+                            },
+                            "name": "MyButton",
+                            "designerId": "fc79e408-73b7-45bd-bb9a-324c90ebbd48",
+                            "cn": [
+                                {
+                                    "type": "viewcontrollereventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "onBtnUsuarioCancelarClick",
+                                        "implHandler": [
+                                            "Ext.getCmp('wndNuevoUsuario').close();"
+                                        ],
+                                        "name": "click",
+                                        "scope": "me"
+                                    },
+                                    "configAlternates": {
+                                        "fn": "string",
+                                        "implHandler": "code",
+                                        "name": "string",
+                                        "scope": "string"
+                                    },
+                                    "name": "onBtnUsuarioCancelarClick",
+                                    "designerId": "28849fe6-2751-4ffe-b114-35e1bc1d29dd"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "id": "btnUsuarioGuardar",
+                                "margin": "0 0 0 10",
+                                "text": "Guardar"
+                            },
+                            "configAlternates": {
+                                "id": "string",
+                                "margin": "auto",
+                                "text": "string"
+                            },
+                            "name": "MyButton1",
+                            "designerId": "e9b8f993-06bc-43d0-9782-d5efb869d203",
+                            "cn": [
+                                {
+                                    "type": "viewcontrollereventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "onBtnUsuarioGuardarClick",
+                                        "implHandler": [
+                                            " var form = Ext.getCmp('frmNuevoUsuario').getForm(),",
+                                            "            store = Ext.getStore('Usuario');",
+                                            "",
+                                            "        if (form.isValid()) {",
+                                            "            var values = form.getValues();",
+                                            "            store.add(values);",
+                                            "            store.sync(",
+                                            "            {",
+                                            "                success: function(batch, options)",
+                                            "                {",
+                                            "                    Ext.getCmp('wndNuevoUsuario').close();",
+                                            "                    store.load();",
+                                            "                    Ext.Msg.alert('Datos Guardados','Se han guardado los datos exitosamente');",
+                                            "                },",
+                                            "                failure: function(batch, options)",
+                                            "                {",
+                                            "",
+                                            "                    Ext.Msg.alert('Advertencia', 'El usuario ya existe.');",
+                                            "                    store.load();",
+                                            "                }",
+                                            "            }",
+                                            "            );",
+                                            "        }",
+                                            "",
+                                            "        else",
+                                            "        {",
+                                            "            Ext.Msg.alert('Error','Ingrese los datos correctamente');",
+                                            "        }"
+                                        ],
+                                        "name": "click",
+                                        "scope": "me"
+                                    },
+                                    "configAlternates": {
+                                        "fn": "string",
+                                        "implHandler": "code",
+                                        "name": "string",
+                                        "scope": "string"
+                                    },
+                                    "name": "onBtnUsuarioGuardarClick",
+                                    "designerId": "0dbe44e3-c0ab-4087-b24e-1758c0ba0273"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

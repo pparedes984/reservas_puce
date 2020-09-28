@@ -1,0 +1,50 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Tipo_Model"
+    },
+    "configAlternates": {
+        "designer|userClassName": "string"
+    },
+    "name": "Estado_Model1",
+    "designerId": "75127710-d5ea-4a7b-af3a-0f3760949bc4",
+    "cn": [
+        {
+            "type": "Ext.data.field.Number",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "id"
+            },
+            "configAlternates": {
+                "name": "string"
+            },
+            "name": "MyNumber4",
+            "designerId": "dfb78d8e-b100-4b86-b40d-a8d39ebaba64"
+        },
+        {
+            "type": "Ext.data.field.String",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "descripcion"
+            },
+            "configAlternates": {
+                "name": "string"
+            },
+            "name": "MyString7",
+            "designerId": "f4ec66c6-663e-49d5-ba16-dea967b8837c"
+        }
+    ]
+}

@@ -1,0 +1,47 @@
+{
+    "name": "reservas_puce",
+    "settings": {
+        "cmd": {
+            "license": "commercial",
+            "cmdVersion": "6.6.0.13",
+            "frameworkVersion": "5.0.1.1255"
+        },
+        "urlPrefixTemplate": "http://localhost:{port}/{path}",
+        "urlPrefix": "http://localhost:53646/",
+        "canvasControls": {
+            "viewportSize": {
+                "name": "Auto Expand",
+                "builtIn": true,
+                "height": null,
+                "width": null
+            }
+        },
+        "exportPath": "",
+        "spacesToIndent": 4,
+        "sdkPath": "",
+        "lineEnding": "CRLF",
+        "genTimestamps": false,
+        "cacheBust": false,
+        "buildShouldOverwriteIndex": true,
+        "generateArchitectVersion": true
+    },
+    "xdsVersion": "4.2.4",
+    "xdsBuild": 389,
+    "schemaVersion": 1,
+    "upgradeVersion": 310000000001,
+    "framework": "ext50",
+    "viewOrderMap": {
+        "view": [],
+        "store": [],
+        "controller": [],
+        "model": [],
+        "resource": [
+            "aad8ffd1-210b-4357-bb95-af8ca13e0ab3",
+            "1f54918a-df9d-41c8-9005-2d45d151752e",
+            "e6e4d544-8e0f-4803-85ef-a49d4a514205"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}

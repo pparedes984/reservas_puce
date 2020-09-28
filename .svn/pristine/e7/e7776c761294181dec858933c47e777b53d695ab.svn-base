@@ -1,0 +1,18 @@
+{
+    "type": "Ext.app.ViewModel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "pnlhorario",
+        "designer|userClassName": "pnlLugarViewModel1"
+    },
+    "configAlternates": {
+        "designer|userAlias": "string",
+        "designer|userClassName": "string"
+    },
+    "name": "pnlLugarViewModel1",
+    "designerId": "351ea37f-0b1b-4ce7-bba2-6d55c92e9e38"
+}

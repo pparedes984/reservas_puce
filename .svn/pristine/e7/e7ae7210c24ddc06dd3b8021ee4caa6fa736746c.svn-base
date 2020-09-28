@@ -1,0 +1,425 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "pnlreservausuario",
+        "designer|userClassName": "pnlReservaUsuario",
+        "layout": "fit",
+        "title": "Reservas"
+    },
+    "configAlternates": {
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "layout": "string",
+        "title": "string"
+    },
+    "name": "MyPanel8",
+    "designerId": "86184a07-aaa7-407b-a1c2-8dea22674a51",
+    "viewControllerInstanceId": "aa217964-ca0c-441d-ad21-e8e1c3e410f0",
+    "viewModelInstanceId": "b55ecbab-db07-495d-b5f0-9a848160e861",
+    "cn": [
+        {
+            "type": "Ext.toolbar.Toolbar",
+            "reference": {
+                "name": "dockedItems",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dock": "top"
+            },
+            "configAlternates": {
+                "dock": "string"
+            },
+            "name": "MyToolbar2",
+            "designerId": "90bef252-4a11-42b2-891b-fab6152d13d4",
+            "cn": [
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "id": "btnReservaUsuarioNuevo",
+                        "layout|flex": null,
+                        "text": "Nuevo"
+                    },
+                    "configAlternates": {
+                        "id": "string",
+                        "layout|flex": "number",
+                        "text": "string"
+                    },
+                    "name": "MyButton6",
+                    "designerId": "985af997-6637-4b8f-8335-3096b2b4189f",
+                    "cn": [
+                        {
+                            "type": "viewcontrollereventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onBtnReservaUsuarioNuevoClick",
+                                "implHandler": [
+                                    "if(!Ext.getCmp('pnlNuevaReservaUsuario'))",
+                                    "        {",
+                                    "            ME.getView().down('#pnlCentral').removeAll();",
+                                    "            var panel = Ext.create('reservas_puce.view.pnlNuevaReservaUsuario');",
+                                    "            ME.getView().down('#pnlCentral').add(panel);",
+                                    "            var storeLugar = Ext.getStore('Lugar');",
+                                    "            storeLugar.proxy.extraParams = {",
+                                    "                busqueda: 3,",
+                                    "                id_lugar: null",
+                                    "            };",
+                                    "            storeLugar.load();",
+                                    "            var storeHorario = Ext.getStore('Horario');",
+                                    "            storeHorario.removeAll();",
+                                    "",
+                                    "",
+                                    "        }"
+                                ],
+                                "name": "click",
+                                "scope": "me"
+                            },
+                            "configAlternates": {
+                                "fn": "string",
+                                "implHandler": "code",
+                                "name": "string",
+                                "scope": "string"
+                            },
+                            "name": "onBtnReservaUsuarioNuevoClick",
+                            "designerId": "620fcc83-5cfc-4cfb-85e2-08d9d1f5e27f"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "id": "btnReservaUsuarioEliminar",
+                        "layout|flex": null,
+                        "text": "Eliminar"
+                    },
+                    "configAlternates": {
+                        "id": "string",
+                        "layout|flex": "number",
+                        "text": "string"
+                    },
+                    "name": "MyButton",
+                    "designerId": "9f263fd0-3313-4dd3-a2c2-e167ede62dc2",
+                    "cn": [
+                        {
+                            "type": "viewcontrollereventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onBtnReservaUsuarioEliminarClick",
+                                "implHandler": [
+                                    "var g = Ext.getCmp('grdReservaUsuario');",
+                                    "        var arrayKeys = g.getSelectionModel().selected.items;",
+                                    "        var indice = g.getSelectionModel().selectionStartIdx;",
+                                    "",
+                                    "        if(arrayKeys.length === 0)",
+                                    "        Ext.Msg.alert('Error', 'Debe escoger un tipo');",
+                                    "        else",
+                                    "        {Ext.Msg.show({",
+                                    "                title: 'Atención',",
+                                    "                msg: 'Está seguro de borrar este registro?',",
+                                    "                icon: Ext.Msg.QUESTION,",
+                                    "                buttonText: {",
+                                    "                    yes: 'Si',",
+                                    "                    no: 'No'",
+                                    "                },",
+                                    "                buttons: Ext.Msg.YESNO,",
+                                    "                fn: function (btn) {",
+                                    "                    if (btn == 'yes') {",
+                                    "            var store = g.getStore();",
+                                    "            var rec = g.selection;",
+                                    "            Ext.Ajax.request({",
+                                    "                url: '../servidor/reservas_puce/reserva/delete',",
+                                    "                method:\"post\",",
+                                    "                params: {",
+                                    "                    id: rec.data.id",
+                                    "                },",
+                                    "                success: function( result, request ) {",
+                                    "                    var responseData = Ext.JSON.decode(result.responseText);",
+                                    "                    if(responseData.success)",
+                                    "                    {",
+                                    "",
+                                    "                        store.remove(rec);",
+                                    "                        store.sync(",
+                                    "                        {",
+                                    "                            params:{",
+                                    "                                id: rec.data.id",
+                                    "                            },",
+                                    "                            success: function(batch, success)",
+                                    "                            {",
+                                    "                                store.commitChanges();",
+                                    "                                store.load();",
+                                    "                                Ext.Msg.alert('Alerta', 'Se ha eliminado el registro exitosamente');",
+                                    "                            },",
+                                    "",
+                                    "                            failure: function(batch, success)",
+                                    "                            {",
+                                    "                                Ext.Msg.alert('Error', 'Hubor un error');",
+                                    "                            }",
+                                    "                        });",
+                                    "                    }",
+                                    "                    else",
+                                    "                    {",
+                                    "                        Ext.Msg.alert('Alerta','Este registro tiene datos asociados.');",
+                                    "                    }",
+                                    "                },",
+                                    "",
+                                    "                failure: function(response, opts) {",
+                                    "                    console.log('server-side failure with status code ' + response.status);",
+                                    "                }",
+                                    "            });",
+                                    "                    }}});",
+                                    "        }"
+                                ],
+                                "name": "click",
+                                "scope": "me"
+                            },
+                            "configAlternates": {
+                                "fn": "string",
+                                "implHandler": "code",
+                                "name": "string",
+                                "scope": "string"
+                            },
+                            "name": "onBtnReservaUsuarioEliminarClick",
+                            "designerId": "278cbb73-758f-4776-a01e-f7784526b5d0"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Ext.grid.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "forceFit": true,
+                "id": "grdReservaUsuario",
+                "store": "Reserva",
+                "title": ""
+            },
+            "configAlternates": {
+                "title": "string",
+                "forceFit": "boolean",
+                "id": "string",
+                "store": "store"
+            },
+            "name": "MyGridPanel1",
+            "designerId": "6f521437-8930-4cb3-8a10-faaaf7c398f9",
+            "cn": [
+                {
+                    "type": "Ext.grid.View",
+                    "reference": {
+                        "name": "viewConfig",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "name": "MyGridView",
+                    "designerId": "be242a88-ce7a-4209-9e1b-5ddf8d9736b2"
+                },
+                {
+                    "type": "Ext.grid.column.Number",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "id",
+                        "hidden": true,
+                        "text": "ID"
+                    },
+                    "configAlternates": {
+                        "dataIndex": "datafield",
+                        "hidden": "boolean",
+                        "text": "string"
+                    },
+                    "name": "MyNumberColumn",
+                    "designerId": "897c5370-64bf-46ac-beb2-dba2b37b0849"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "usuario",
+                        "text": "Usuario"
+                    },
+                    "configAlternates": {
+                        "dataIndex": "datafield",
+                        "hidden": "boolean",
+                        "text": "string"
+                    },
+                    "name": "MyColumn",
+                    "designerId": "8acff3fa-4838-435b-ba9b-9e74ec5bd157"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "lugar",
+                        "text": "Lugar"
+                    },
+                    "configAlternates": {
+                        "dataIndex": "datafield",
+                        "text": "string"
+                    },
+                    "name": "MyColumn2",
+                    "designerId": "1ef5d05f-27ec-4b9d-a179-cc9e77f8ba8c"
+                },
+                {
+                    "type": "Ext.grid.column.Date",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "fecha_reserva",
+                        "format": "d-m-Y",
+                        "text": "Fecha"
+                    },
+                    "configAlternates": {
+                        "dataIndex": "datafield",
+                        "format": "string",
+                        "text": "string"
+                    },
+                    "name": "MyDateColumn5",
+                    "designerId": "6ff92254-b4ed-453b-8996-0623f305b2aa"
+                },
+                {
+                    "type": "Ext.grid.column.Date",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "hora_inicio",
+                        "format": "H:i",
+                        "text": "Hora de inicio"
+                    },
+                    "configAlternates": {
+                        "dataIndex": "datafield",
+                        "format": "string",
+                        "text": "string"
+                    },
+                    "name": "MyDateColumn1",
+                    "designerId": "a9b5b166-30c3-42df-b84f-ce478da64e37"
+                },
+                {
+                    "type": "Ext.grid.column.Date",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "hora_fin",
+                        "format": "H:i",
+                        "text": "Hora de fin"
+                    },
+                    "configAlternates": {
+                        "dataIndex": "datafield",
+                        "format": "string",
+                        "text": "string"
+                    },
+                    "name": "MyDateColumn2",
+                    "designerId": "8f8b842a-d5c2-4561-9d4d-52e83c875d7e"
+                },
+                {
+                    "type": "Ext.grid.column.Number",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "id_horario",
+                        "hidden": true,
+                        "text": "Horario"
+                    },
+                    "configAlternates": {
+                        "dataIndex": "datafield",
+                        "hidden": "boolean",
+                        "text": "string"
+                    },
+                    "name": "MyNumberColumn1",
+                    "designerId": "23454851-eb10-4237-b77d-7572beb23d93"
+                },
+                {
+                    "type": "Ext.grid.column.Boolean",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "asistencia",
+                        "hidden": true,
+                        "text": "Asistencia"
+                    },
+                    "configAlternates": {
+                        "dataIndex": "datafield",
+                        "hidden": "boolean",
+                        "text": "string"
+                    },
+                    "name": "MyBooleanColumn",
+                    "designerId": "efc3be4b-46cf-454e-94e0-e48816d43348"
+                },
+                {
+                    "type": "Ext.toolbar.Paging",
+                    "reference": {
+                        "name": "dockedItems",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "displayInfo": true,
+                        "dock": "bottom",
+                        "store": "Reserva",
+                        "width": 360
+                    },
+                    "configAlternates": {
+                        "displayInfo": "boolean",
+                        "dock": "string",
+                        "store": "store",
+                        "width": "auto"
+                    },
+                    "name": "MyPagingToolbar",
+                    "designerId": "ffa4085b-bcfa-4351-9ff9-c38867f36a3d"
+                }
+            ]
+        }
+    ]
+}

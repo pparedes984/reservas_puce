@@ -1,0 +1,457 @@
+{
+    "type": "Ext.container.Viewport",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "vwprtprincipal",
+        "designer|userClassName": "vwprtPrincipal",
+        "layout": "fit"
+    },
+    "configAlternates": {
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "layout": "string"
+    },
+    "name": "MyViewport",
+    "designerId": "55a18566-5788-4ff6-b2c8-c4db3a173194",
+    "viewControllerInstanceId": "c362f2c1-8708-4149-ba25-b86ec387ca90",
+    "viewModelInstanceId": "d4a83cad-293e-4e2c-a5d3-2bc744b059ec",
+    "cn": [
+        {
+            "type": "Ext.panel.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "bodyPadding": "0 50 0 50",
+                "bodyStyle": [
+                    "background-color: #666666"
+                ],
+                "layout": "border",
+                "title": ""
+            },
+            "configAlternates": {
+                "layout|region": "string",
+                "title": "string",
+                "bodyPadding": "auto",
+                "bodyStyle": "object",
+                "layout": "string"
+            },
+            "name": "MyPanel3",
+            "designerId": "d15b0e5e-38ea-45fa-a6e5-2ef7a4c24999",
+            "cn": [
+                {
+                    "type": "Ext.panel.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dock": null,
+                        "height": 100,
+                        "layout|region": "north"
+                    },
+                    "configAlternates": {
+                        "dock": "string",
+                        "height": "auto",
+                        "title": "string",
+                        "layout|region": "string"
+                    },
+                    "name": "MyPanel4",
+                    "designerId": "81136795-b9ab-46ca-8dec-dc2b30c04b93"
+                },
+                {
+                    "type": "Ext.panel.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "container|align": "center",
+                        "dock": null,
+                        "layout": "vbox",
+                        "layout|region": "west",
+                        "style": "border-right:1px solid #919191; border-top:1px solid #919191",
+                        "title": "",
+                        "width": 169
+                    },
+                    "configAlternates": {
+                        "style": "string",
+                        "container|align": "string",
+                        "dock": "string",
+                        "layout": "string",
+                        "title": "string",
+                        "width": "auto",
+                        "layout|region": "string"
+                    },
+                    "name": "MyPanel5",
+                    "designerId": "14f246ec-fb7e-401d-a948-819ade0b2e51",
+                    "cn": [
+                        {
+                            "type": "Ext.menu.Menu",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "floating": false,
+                                "width": 169
+                            },
+                            "configAlternates": {
+                                "floating": "boolean",
+                                "width": "auto"
+                            },
+                            "name": "MyMenu",
+                            "designerId": "4626fb75-4cd0-4ba9-b37a-63477d002263",
+                            "cn": [
+                                {
+                                    "type": "Ext.menu.Item",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "id": "mnUsuario",
+                                        "text": "Usuario"
+                                    },
+                                    "configAlternates": {
+                                        "text": "string",
+                                        "id": "string"
+                                    },
+                                    "name": "MyMenuItem3",
+                                    "designerId": "457b054c-1377-44d7-9e99-bad0753a3223",
+                                    "cn": [
+                                        {
+                                            "type": "viewcontrollereventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "onMnUsuarioClick",
+                                                "implHandler": [
+                                                    "if(!Ext.getCmp('pnlUsuario'))",
+                                                    "        {",
+                                                    "            this.getView().down('#pnlCentral').removeAll();",
+                                                    "            var panel = Ext.create('reservas_puce.view.pnlUsuario');",
+                                                    "            this.getView().down('#pnlCentral').add(panel);",
+                                                    "            var store = Ext.getStore('Usuario');",
+                                                    "            store.load();",
+                                                    "        }"
+                                                ],
+                                                "name": "click",
+                                                "scope": "me"
+                                            },
+                                            "configAlternates": {
+                                                "fn": "string",
+                                                "implHandler": "code",
+                                                "name": "string",
+                                                "scope": "string"
+                                            },
+                                            "name": "onMnUsuarioClick",
+                                            "designerId": "0992a0ab-5c30-4490-b353-a162be2dae8d"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.menu.Item",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "id": "mnTipo",
+                                        "text": "Tipo"
+                                    },
+                                    "configAlternates": {
+                                        "text": "string",
+                                        "id": "string"
+                                    },
+                                    "name": "MyMenuItem5",
+                                    "designerId": "426f2377-8616-4305-92c9-bbeb4e643e01",
+                                    "cn": [
+                                        {
+                                            "type": "viewcontrollereventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "onMnTipoClick",
+                                                "implHandler": [
+                                                    "if(!Ext.getCmp('pnlTipo'))",
+                                                    "        {",
+                                                    "            this.getView().down('#pnlCentral').removeAll();",
+                                                    "            var panel = Ext.create('reservas_puce.view.pnlTipo');",
+                                                    "            this.getView().down('#pnlCentral').add(panel);",
+                                                    "            var store = Ext.getStore('Tipo');",
+                                                    "            store.load();",
+                                                    "        }"
+                                                ],
+                                                "name": "click",
+                                                "scope": "me"
+                                            },
+                                            "configAlternates": {
+                                                "fn": "string",
+                                                "implHandler": "code",
+                                                "name": "string",
+                                                "scope": "string"
+                                            },
+                                            "name": "onMnTipoClick",
+                                            "designerId": "4c480363-562c-4d7f-b08a-cb9692a28d6b"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.menu.Item",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "id": "mnLugar",
+                                        "text": "Lugar"
+                                    },
+                                    "configAlternates": {
+                                        "text": "string",
+                                        "id": "string"
+                                    },
+                                    "name": "MyMenuItem1",
+                                    "designerId": "4fef5872-31d6-4808-af16-559b21ca1890",
+                                    "cn": [
+                                        {
+                                            "type": "viewcontrollereventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "onMnLugarClick",
+                                                "implHandler": [
+                                                    "if(!Ext.getCmp('pnlLugar'))",
+                                                    "        {",
+                                                    "            this.getView().down('#pnlCentral').removeAll();",
+                                                    "            var panel = Ext.create('reservas_puce.view.pnlLugar');",
+                                                    "            this.getView().down('#pnlCentral').add(panel);",
+                                                    "            var storeLugar = Ext.getStore('Lugar');",
+                                                    "            storeLugar.load();",
+                                                    "            var storeTipo = Ext.getStore('Tipo');",
+                                                    "            storeTipo.load();",
+                                                    "            var storeEstado = Ext.getStore('Estado');",
+                                                    "            storeEstado.load();",
+                                                    "",
+                                                    "        }"
+                                                ],
+                                                "name": "click",
+                                                "scope": "me"
+                                            },
+                                            "configAlternates": {
+                                                "fn": "string",
+                                                "implHandler": "code",
+                                                "name": "string",
+                                                "scope": "string"
+                                            },
+                                            "name": "onMnLugarClick",
+                                            "designerId": "7834ef15-765a-4205-bba4-99200bf53b6d"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.menu.Item",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "text": "Horario"
+                                    },
+                                    "configAlternates": {
+                                        "text": "string"
+                                    },
+                                    "name": "MyMenuItem",
+                                    "designerId": "a6f0dbed-cc80-403a-9305-00aa1c964f46"
+                                },
+                                {
+                                    "type": "Ext.menu.Item",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "text": "Reserva"
+                                    },
+                                    "configAlternates": {
+                                        "text": "string"
+                                    },
+                                    "name": "MyMenuItem2",
+                                    "designerId": "45ef63e1-b0e4-4fc7-b762-3525a1bdf3f6"
+                                },
+                                {
+                                    "type": "Ext.menu.Separator",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "name": "MySeparator",
+                                    "designerId": "f0f245f6-3af6-4528-8d4f-064131e33b1b"
+                                },
+                                {
+                                    "type": "Ext.menu.Item",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "id": "mnSalir",
+                                        "text": "Salir"
+                                    },
+                                    "configAlternates": {
+                                        "text": "string",
+                                        "id": "string"
+                                    },
+                                    "name": "MyMenuItem4",
+                                    "designerId": "db5ef6a9-2cc8-4ec3-8967-72d5f11c9881",
+                                    "cn": [
+                                        {
+                                            "type": "viewcontrollereventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "onBtnSalirClick",
+                                                "implHandler": [
+                                                    "var viewMain = this;",
+                                                    "        Ext.Ajax.request",
+                                                    "        (",
+                                                    "        {",
+                                                    "            url: '../servidor/login/logout',",
+                                                    "            success:function(response,options)",
+                                                    "            {",
+                                                    "                var responseData = Ext.JSON.decode(response.responseText);",
+                                                    "                if(responseData.success)",
+                                                    "                {",
+                                                    "                    viewMain.getView().destroy();",
+                                                    "                    Ext.create('reservas_puce.view.vwprtLogin', {renderTo: Ext.getBody()});",
+                                                    "                }",
+                                                    "            }",
+                                                    "        }",
+                                                    "        );"
+                                                ],
+                                                "name": "click",
+                                                "scope": "me"
+                                            },
+                                            "configAlternates": {
+                                                "fn": "string",
+                                                "implHandler": "code",
+                                                "name": "string",
+                                                "scope": "string"
+                                            },
+                                            "name": "onBtnSalirClick",
+                                            "designerId": "f9000cd8-5293-490f-af81-0f9ae5ffbf23"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.panel.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dock": null,
+                        "id": "pnlCentral",
+                        "layout": "fit",
+                        "layout|region": "center",
+                        "style": "border-top:1px solid #919191",
+                        "title": ""
+                    },
+                    "configAlternates": {
+                        "dock": "string",
+                        "layout": "string",
+                        "title": "string",
+                        "style": "string",
+                        "id": "string",
+                        "layout|region": "string"
+                    },
+                    "name": "MyPanel6",
+                    "designerId": "804ef388-c3d5-489e-a329-3e9d13a6679d"
+                },
+                {
+                    "type": "Ext.panel.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "bodyStyle": [
+                            "background-color: #a7b8d3"
+                        ],
+                        "dock": null,
+                        "height": 25,
+                        "layout": "fit",
+                        "layout|region": "south",
+                        "title": ""
+                    },
+                    "configAlternates": {
+                        "bodyStyle": "object",
+                        "dock": "string",
+                        "height": "auto",
+                        "title": "string",
+                        "layout": "string",
+                        "layout|region": "string"
+                    },
+                    "name": "MyPanel7",
+                    "designerId": "f5920b57-68ef-4664-bd62-2fd5922f3d5f",
+                    "cn": [
+                        {
+                            "type": "Ext.form.Label",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "id": "dplyNombre",
+                                "margin": "4 0 0 50",
+                                "width": 300
+                            },
+                            "configAlternates": {
+                                "id": "string",
+                                "margin": "auto",
+                                "width": "auto"
+                            },
+                            "name": "MyLabel",
+                            "designerId": "2e7d7bc6-6f87-4859-a50e-8ae4c948aee7"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

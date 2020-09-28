@@ -1,0 +1,18 @@
+{
+    "type": "Ext.app.ViewModel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "wndnuevolugar",
+        "designer|userClassName": "wndNuevoUsuarioViewModel2"
+    },
+    "configAlternates": {
+        "designer|userAlias": "string",
+        "designer|userClassName": "string"
+    },
+    "name": "wndNuevoUsuarioViewModel2",
+    "designerId": "f7d5635b-d1ff-4db2-a647-eb4021969e26"
+}

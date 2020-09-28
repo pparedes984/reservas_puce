@@ -1,0 +1,398 @@
+{
+    "type": "Ext.window.Window",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "wndnuevolugar",
+        "designer|userClassName": "wndNuevoLugar",
+        "id": "wndNuevoLugar",
+        "layout": "fit",
+        "modal": true,
+        "title": "Nuevo Lugar",
+        "width": 450
+    },
+    "configAlternates": {
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "id": "string",
+        "layout": "string",
+        "modal": "boolean",
+        "title": "string",
+        "width": "auto"
+    },
+    "name": "wndNuevoUsuario1",
+    "designerId": "a9959d10-af7b-4d63-bcf6-25c8622bd745",
+    "viewControllerInstanceId": "ddf92f24-d54b-496a-9ae2-2d1e81305ff1",
+    "viewModelInstanceId": "f7d5635b-d1ff-4db2-a647-eb4021969e26",
+    "cn": [
+        {
+            "type": "Ext.form.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "bodyPadding": 10,
+                "container|align": "center",
+                "id": "frmNuevoLugar",
+                "layout": "vbox",
+                "title": ""
+            },
+            "configAlternates": {
+                "bodyPadding": "auto",
+                "container|align": "string",
+                "id": "string",
+                "layout": "string",
+                "title": "string"
+            },
+            "name": "MyForm",
+            "designerId": "a9c78e19-ebe7-4eef-9793-ae0bcf26e639",
+            "cn": [
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "allowBlank": false,
+                        "fieldLabel": "Descripción",
+                        "id": "txtNuevoLugarDescripcion",
+                        "labelWidth": 80,
+                        "name": "descripcion"
+                    },
+                    "configAlternates": {
+                        "allowBlank": "boolean",
+                        "fieldLabel": "string",
+                        "labelWidth": "number",
+                        "name": "string",
+                        "id": "string"
+                    },
+                    "name": "MyTextField",
+                    "designerId": "59f69fcb-fa81-4a23-a1a1-308758f344a6"
+                },
+                {
+                    "type": "Ext.form.field.ComboBox",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "allowBlank": false,
+                        "displayField": "descripcion",
+                        "editable": false,
+                        "fieldLabel": "Estado",
+                        "labelWidth": 80,
+                        "layout|flex": 1,
+                        "name": "id_estado",
+                        "queryMode": "local",
+                        "store": "Estado",
+                        "valueField": "id"
+                    },
+                    "configAlternates": {
+                        "allowBlank": "boolean",
+                        "displayField": "datafield",
+                        "editable": "boolean",
+                        "fieldLabel": "string",
+                        "labelWidth": "number",
+                        "layout|flex": "number",
+                        "name": "string",
+                        "queryMode": "string",
+                        "store": "store",
+                        "valueField": "datafield"
+                    },
+                    "name": "MyComboBox",
+                    "designerId": "83a07a99-e6bb-4d9e-b488-c4e540aa2f4a"
+                },
+                {
+                    "type": "Ext.form.field.Number",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "allowBlank": false,
+                        "fieldLabel": "Aforo",
+                        "labelWidth": 80,
+                        "minValue": 0,
+                        "name": "aforo"
+                    },
+                    "configAlternates": {
+                        "allowBlank": "boolean",
+                        "fieldLabel": "string",
+                        "labelWidth": "number",
+                        "name": "string",
+                        "minValue": "number"
+                    },
+                    "name": "MyNumberField1",
+                    "designerId": "3bef0c6b-4bc7-45fd-87c9-a951b41317fb"
+                },
+                {
+                    "type": "Ext.form.field.ComboBox",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "allowBlank": false,
+                        "displayField": "descripcion",
+                        "editable": false,
+                        "fieldLabel": "Tipo",
+                        "labelWidth": 80,
+                        "layout|flex": 1,
+                        "name": "id_tipo",
+                        "queryMode": "local",
+                        "store": "Tipo",
+                        "valueField": "id"
+                    },
+                    "configAlternates": {
+                        "allowBlank": "boolean",
+                        "displayField": "datafield",
+                        "editable": "boolean",
+                        "fieldLabel": "string",
+                        "labelWidth": "number",
+                        "layout|flex": "number",
+                        "name": "string",
+                        "queryMode": "string",
+                        "store": "store",
+                        "valueField": "datafield"
+                    },
+                    "name": "MyComboBox1",
+                    "designerId": "938314b0-368b-485e-b024-27c23fd040cf"
+                },
+                {
+                    "type": "Ext.form.field.ComboBox",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "displayField": "descripcion",
+                        "editable": false,
+                        "fieldLabel": "Lugar",
+                        "labelWidth": 80,
+                        "layout|flex": 1,
+                        "name": "id_lugar",
+                        "queryMode": "local",
+                        "store": "Lugar",
+                        "valueField": "id"
+                    },
+                    "configAlternates": {
+                        "displayField": "datafield",
+                        "editable": "boolean",
+                        "fieldLabel": "string",
+                        "labelWidth": "number",
+                        "layout|flex": "number",
+                        "name": "string",
+                        "queryMode": "string",
+                        "store": "store",
+                        "valueField": "datafield"
+                    },
+                    "name": "MyComboBox2",
+                    "designerId": "fd55bb10-dc1b-4098-8344-9579cdbe7e7a"
+                },
+                {
+                    "type": "Ext.form.field.Number",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "allowBlank": false,
+                        "fieldLabel": "Nivel",
+                        "labelWidth": 80,
+                        "minValue": 0,
+                        "name": "nivel"
+                    },
+                    "configAlternates": {
+                        "allowBlank": "boolean",
+                        "fieldLabel": "string",
+                        "labelWidth": "number",
+                        "name": "string",
+                        "minValue": "number"
+                    },
+                    "name": "MyNumberField",
+                    "designerId": "82421efc-1bb0-433d-a23a-7b3b9bcdc7bc"
+                },
+                {
+                    "type": "Ext.form.FieldContainer",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "container|align": "middle",
+                        "container|pack": "center",
+                        "fieldLabel": "",
+                        "height": 37,
+                        "layout": "hbox",
+                        "layout|flex": null,
+                        "width": 400
+                    },
+                    "configAlternates": {
+                        "container|align": "string",
+                        "container|pack": "string",
+                        "fieldLabel": "string",
+                        "height": "auto",
+                        "layout": "string",
+                        "layout|flex": "number",
+                        "width": "auto"
+                    },
+                    "name": "MyFieldContainer",
+                    "designerId": "82076cc3-7a53-482d-bc5d-f0dded8e4a04",
+                    "cn": [
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "id": "btnLugarCancelar",
+                                "text": "Cancelar"
+                            },
+                            "configAlternates": {
+                                "id": "string",
+                                "text": "string"
+                            },
+                            "name": "MyButton",
+                            "designerId": "3fbafeb1-afd2-4f49-aad3-9af6cd0f26c4",
+                            "cn": [
+                                {
+                                    "type": "viewcontrollereventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "onBtnLugarCancelarClick",
+                                        "implHandler": [
+                                            "Ext.getCmp('wndNuevoLugar').close();"
+                                        ],
+                                        "name": "click",
+                                        "scope": "me"
+                                    },
+                                    "configAlternates": {
+                                        "fn": "string",
+                                        "implHandler": "code",
+                                        "name": "string",
+                                        "scope": "string"
+                                    },
+                                    "name": "onBtnLugarCancelarClick",
+                                    "designerId": "4355f3c6-ee95-4c61-ba21-b8b2c2aaa455"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "id": "btnLugarGuardar",
+                                "margin": "0 0 0 10",
+                                "text": "Guardar"
+                            },
+                            "configAlternates": {
+                                "id": "string",
+                                "margin": "auto",
+                                "text": "string"
+                            },
+                            "name": "MyButton1",
+                            "designerId": "9a2c33df-7cfe-4b7b-abd5-60259b04c10f",
+                            "cn": [
+                                {
+                                    "type": "viewcontrollereventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "onBtnLugarGuardarClick",
+                                        "implHandler": [
+                                            "var form = Ext.getCmp('frmNuevoLugar').getForm(),",
+                                            "    store = Ext.getStore('Lugar');",
+                                            "if (form.isValid()) {",
+                                            "    Ext.Ajax.request({",
+                                            "        url: '../servidor/reservas_puce/lugar/verificar',",
+                                            "        method:\"post\",",
+                                            "        params: {",
+                                            "            descripcion: Ext.getCmp('txtNuevoLugarDescripcion').getValue()",
+                                            "        },",
+                                            "        success: function( result, request ) {",
+                                            "            var responseData = Ext.JSON.decode(result.responseText);",
+                                            "            if(responseData.success)",
+                                            "            {",
+                                            "                var values = form.getValues();",
+                                            "                store.add(values);",
+                                            "                store.sync(",
+                                            "                    {",
+                                            "                        success: function(batch, options)",
+                                            "                        {",
+                                            "                            Ext.getCmp('wndNuevoLugar').close();",
+                                            "                            store.load();",
+                                            "                            Ext.Msg.alert('Datos Guardados','Se han guardado los datos exitosamente');",
+                                            "                        },",
+                                            "                        failure: function(batch, options)",
+                                            "                        {",
+                                            "",
+                                            "                            Ext.Msg.alert('Advertencia', 'Hubo un error.');",
+                                            "                            store.load();",
+                                            "                        }",
+                                            "                    }",
+                                            "                );",
+                                            "            }",
+                                            "            else",
+                                            "            {",
+                                            "                Ext.Msg.alert('Alerta','Este lugar ya está ingresado.');",
+                                            "            }",
+                                            "        },",
+                                            "",
+                                            "        failure: function(response, opts) {",
+                                            "            Ext.Msg.alert('Alerta','Este lugar ya está ingresado.');",
+                                            "",
+                                            "        }",
+                                            "    });",
+                                            "}",
+                                            "else",
+                                            "{",
+                                            "    Ext.Msg.alert('Error','Ingrese los datos correctamente');",
+                                            "}",
+                                            ""
+                                        ],
+                                        "name": "click",
+                                        "scope": "me"
+                                    },
+                                    "configAlternates": {
+                                        "fn": "string",
+                                        "implHandler": "code",
+                                        "name": "string",
+                                        "scope": "string"
+                                    },
+                                    "name": "onBtnLugarGuardarClick",
+                                    "designerId": "505164ff-4be4-4c4a-9985-5a429b550ab5"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

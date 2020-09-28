@@ -1,0 +1,200 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Reserva_Model"
+    },
+    "configAlternates": {
+        "designer|userClassName": "string"
+    },
+    "name": "MyModel",
+    "designerId": "c756dd8b-e0e1-411b-967f-01b8032aad4f",
+    "cn": [
+        {
+            "type": "Ext.data.field.Number",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "id"
+            },
+            "configAlternates": {
+                "name": "string"
+            },
+            "name": "MyNumber4",
+            "designerId": "a2a46795-bc08-4c02-97e9-3062dc1557dc"
+        },
+        {
+            "type": "Ext.data.field.String",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "usuario"
+            },
+            "configAlternates": {
+                "name": "string"
+            },
+            "name": "MyString1",
+            "designerId": "2f09df8a-a04e-4606-bafe-c0c05a6254c7"
+        },
+        {
+            "type": "Ext.data.field.String",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "nombre"
+            },
+            "configAlternates": {
+                "name": "string"
+            },
+            "name": "MyString9",
+            "designerId": "7e77d894-b28a-4226-8dd6-008f077bfbeb"
+        },
+        {
+            "type": "Ext.data.field.String",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "cedula"
+            },
+            "configAlternates": {
+                "name": "string"
+            },
+            "name": "MyString10",
+            "designerId": "4e8f3251-d578-4ac8-a4a8-f689306d8f43"
+        },
+        {
+            "type": "Ext.data.field.Number",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "id_horario"
+            },
+            "configAlternates": {
+                "name": "string"
+            },
+            "name": "MyNumber7",
+            "designerId": "4b77b9e0-3902-4adf-be02-83dba3e49a42"
+        },
+        {
+            "type": "Ext.data.field.Number",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "id_lugar"
+            },
+            "configAlternates": {
+                "name": "string"
+            },
+            "name": "MyNumber8",
+            "designerId": "ef5a22b1-c038-4f7d-8c3b-3a89a1fdb8da"
+        },
+        {
+            "type": "Ext.data.field.Boolean",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "asistencia"
+            },
+            "configAlternates": {
+                "name": "string"
+            },
+            "name": "MyBoolean",
+            "designerId": "93e6c23a-8bf5-4a95-8ef8-6fa7dbfd46a1"
+        },
+        {
+            "type": "Ext.data.field.Date",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dateFormat": "Y-m-d",
+                "name": "fecha_reserva"
+            },
+            "configAlternates": {
+                "dateFormat": "string",
+                "name": "string"
+            },
+            "name": "MyDate3",
+            "designerId": "e672009b-ec9e-44b4-ad75-554aee7ba089"
+        },
+        {
+            "type": "Ext.data.field.Date",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dateFormat": "H:i",
+                "name": "hora_inicio"
+            },
+            "configAlternates": {
+                "dateFormat": "string",
+                "name": "string"
+            },
+            "name": "MyDate6",
+            "designerId": "ff2b993f-b869-4f37-93b3-0c22f9d9d596"
+        },
+        {
+            "type": "Ext.data.field.Date",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dateFormat": "H:i",
+                "name": "hora_fin"
+            },
+            "configAlternates": {
+                "dateFormat": "string",
+                "name": "string"
+            },
+            "name": "MyDate7",
+            "designerId": "9d57b112-cf51-406d-bef5-099a9bf721c8"
+        },
+        {
+            "type": "Ext.data.field.String",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "lugar"
+            },
+            "configAlternates": {
+                "name": "string"
+            },
+            "name": "MyString2",
+            "designerId": "55dc0ced-b891-4b41-ae31-386ab55886de"
+        }
+    ]
+}

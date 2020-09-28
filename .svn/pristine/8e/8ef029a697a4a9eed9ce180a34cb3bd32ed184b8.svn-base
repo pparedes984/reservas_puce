@@ -1,0 +1,18 @@
+{
+    "type": "Ext.app.ViewController",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "pnlnuevareserva",
+        "designer|userClassName": "pnlNuevaReservaViewController"
+    },
+    "configAlternates": {
+        "designer|userAlias": "string",
+        "designer|userClassName": "string"
+    },
+    "name": "pnlNuevaReservaUsuarioViewController1",
+    "designerId": "c3482f49-5a54-4a66-be4d-898a55ca7d4b"
+}

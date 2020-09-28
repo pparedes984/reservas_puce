@@ -1,0 +1,106 @@
+{
+    "name": "reservas_puce",
+    "settings": {
+        "cmd": {
+            "license": "commercial",
+            "cmdVersion": "6.6.0.13",
+            "frameworkVersion": "5.0.1.1255"
+        },
+        "urlPrefixTemplate": "http://localhost:{port}/{path}",
+        "urlPrefix": "http://localhost:58228/",
+        "canvasControls": {
+            "viewportSize": {
+                "name": "Auto Expand",
+                "builtIn": true,
+                "height": null,
+                "width": null
+            }
+        },
+        "exportPath": "",
+        "spacesToIndent": 4,
+        "sdkPath": "",
+        "lineEnding": "CRLF",
+        "genTimestamps": false,
+        "cacheBust": false,
+        "buildShouldOverwriteIndex": true,
+        "generateArchitectVersion": true
+    },
+    "xdsVersion": "4.2.4",
+    "xdsBuild": 389,
+    "schemaVersion": 1,
+    "upgradeVersion": 310000000001,
+    "framework": "ext50",
+    "viewOrderMap": {
+        "view": [
+            "71e2a9ae-3e25-4c7a-b510-dff7da6b49ab",
+            "642f97ae-6eb8-48a0-8bfa-6a0317092b8d",
+            "3cd2e603-2c3c-42f3-9ee0-f5daa658fbcc",
+            "55a18566-5788-4ff6-b2c8-c4db3a173194",
+            "d4a83cad-293e-4e2c-a5d3-2bc744b059ec",
+            "c362f2c1-8708-4149-ba25-b86ec387ca90",
+            "da5631fe-e4a0-4db9-87b2-38ef9865259c",
+            "458c6e0c-efa0-4b63-aeef-9069e0247a73",
+            "f7741d86-dd7c-4971-8089-c70e3b842513",
+            "351ea37f-0b1b-4ce7-bba2-6d55c92e9e38",
+            "33e197df-3b61-435a-95de-f2f5052da8d6",
+            "b43a03dc-c05c-4c19-8a23-9eeeab0fc624",
+            "e822a0be-be13-4235-adbe-5b6414d20856",
+            "e6f13cde-35ed-4783-91af-ac7bd5edde73",
+            "aecb5318-bd63-4a9d-893a-9d0d8b94b898",
+            "09459c3b-d132-4702-a686-974a6bff3a3d",
+            "a9959d10-af7b-4d63-bcf6-25c8622bd745",
+            "87a6cdde-13dd-4622-9191-26043ac2220b",
+            "b767ebf1-d01e-4c5a-b830-a0eaac44957b",
+            "beef783c-be71-4035-bb68-e400ff7905f9",
+            "f7d5635b-d1ff-4db2-a647-eb4021969e26",
+            "1b98d457-a4d7-487c-9f11-9b281f50512a",
+            "bcd97171-30a5-409b-8b88-7d86f4abd183",
+            "d4af8ff2-d266-4593-a073-1f2f3d939ff4",
+            "ddf92f24-d54b-496a-9ae2-2d1e81305ff1",
+            "82b5cd3e-e31c-43f2-80b1-e39f9e37fb0c",
+            "dc7541e3-c18c-43e8-bce5-5693486575a9",
+            "badee9ee-8e3f-4e13-8c75-101c44e741bb",
+            "68f956e3-17d0-4093-81b1-6bc998b1022b",
+            "39595c08-8d06-4cbd-9057-54b05c319deb",
+            "86184a07-aaa7-407b-a1c2-8dea22674a51",
+            "273a5cfd-963a-4e54-ada6-c17890e40a72",
+            "b55ecbab-db07-495d-b5f0-9a848160e861",
+            "01f10bb5-ce78-4a30-9590-ecf6a1134d3f",
+            "aa217964-ca0c-441d-ad21-e8e1c3e410f0",
+            "77912834-162f-4887-b05e-03804c8d4084",
+            "b2db48f0-f79a-47bc-8d32-19dee4b59239",
+            "8393a9ba-f9bc-485f-a664-991afa160944",
+            "6e69ca25-51bb-4978-b55c-9dba9f0d4598",
+            "e5631bd8-6e04-4e3a-997d-b2b6b9bf3533",
+            "992bbfa9-8b69-440b-84cb-e5f6918a2c4d",
+            "c3482f49-5a54-4a66-be4d-898a55ca7d4b"
+        ],
+        "store": [
+            "b40d610d-4bc4-4470-b8f1-2a5c3df7700c",
+            "8d75ae54-9892-4032-a41b-3a273b1ea789",
+            "18ecc284-77db-4c1c-8dd9-8c9d817dd109",
+            "6dc2bd42-c3d5-4c17-a5a8-e8b3b86722cc",
+            "d5452fc4-1642-4c98-a625-78e778c76861",
+            "7968e7aa-301b-41f8-9c98-7d4897b8fd01",
+            "99cff4bb-b1ff-487c-9ceb-b9c2af15688c"
+        ],
+        "controller": [],
+        "model": [
+            "943dc4a0-9dc5-4a05-8995-be1df3db42ad",
+            "c756dd8b-e0e1-411b-967f-01b8032aad4f",
+            "05432307-354a-4a59-8824-eb4636b4c614",
+            "ce8bfde4-1f9e-480e-9eb7-86292ddeabaf",
+            "75127710-d5ea-4a7b-af3a-0f3760949bc4",
+            "11e64cb0-ca5f-4d4b-a8e0-3011b85412f9",
+            "ad7aee97-4b8d-49f2-9765-9317a6a5262e"
+        ],
+        "resource": [
+            "52b11854-2429-40b0-a93d-c9354d94df5d",
+            "1f54918a-df9d-41c8-9005-2d45d151752e",
+            "e6e4d544-8e0f-4803-85ef-a49d4a514205"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}

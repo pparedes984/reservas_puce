@@ -1,0 +1,82 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Usuario_model"
+    },
+    "configAlternates": {
+        "designer|userClassName": "string"
+    },
+    "name": "MyModel",
+    "designerId": "11e64cb0-ca5f-4d4b-a8e0-3011b85412f9",
+    "cn": [
+        {
+            "type": "Ext.data.field.String",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "usuario"
+            },
+            "configAlternates": {
+                "name": "string"
+            },
+            "name": "MyString1",
+            "designerId": "4507c0cb-c3b7-4ae7-9391-f880e63e095a"
+        },
+        {
+            "type": "Ext.data.field.String",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "nombre"
+            },
+            "configAlternates": {
+                "name": "string"
+            },
+            "name": "MyString2",
+            "designerId": "7c19afc0-8b88-4525-8e1f-3c333764541c"
+        },
+        {
+            "type": "Ext.data.field.String",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "apellido"
+            },
+            "configAlternates": {
+                "name": "string"
+            },
+            "name": "MyString3",
+            "designerId": "bdbae928-04df-4554-92ed-2878787b535a"
+        },
+        {
+            "type": "Ext.data.field.String",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "cedula"
+            },
+            "configAlternates": {
+                "name": "string"
+            },
+            "name": "MyString4",
+            "designerId": "d46a8e06-24bb-4174-834d-5c4604347a1a"
+        }
+    ]
+}

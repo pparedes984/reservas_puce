@@ -1,0 +1,550 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "pnlhorario",
+        "designer|userClassName": "pnlHorario",
+        "layout": "fit",
+        "title": "Horario"
+    },
+    "configAlternates": {
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "layout": "string",
+        "title": "string"
+    },
+    "name": "pnlLugar1",
+    "designerId": "458c6e0c-efa0-4b63-aeef-9069e0247a73",
+    "viewControllerInstanceId": "b43a03dc-c05c-4c19-8a23-9eeeab0fc624",
+    "viewModelInstanceId": "351ea37f-0b1b-4ce7-bba2-6d55c92e9e38",
+    "cn": [
+        {
+            "type": "Ext.grid.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "forceFit": true,
+                "id": "grdHorario",
+                "store": "Lugar",
+                "title": ""
+            },
+            "configAlternates": {
+                "forceFit": "boolean",
+                "store": "store",
+                "title": "string",
+                "id": "string"
+            },
+            "name": "MyGridPanel",
+            "designerId": "a76c22aa-a5ea-4a4b-9722-fac8a2243534",
+            "cn": [
+                {
+                    "type": "Ext.grid.column.Number",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "id",
+                        "hidden": true,
+                        "text": "ID"
+                    },
+                    "configAlternates": {
+                        "dataIndex": "datafield",
+                        "text": "string",
+                        "hidden": "boolean"
+                    },
+                    "name": "MyNumberColumn",
+                    "designerId": "2f3d2d38-ce7c-452b-909e-b3ae2097604d"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "descripcion",
+                        "text": "Descripcion"
+                    },
+                    "configAlternates": {
+                        "dataIndex": "datafield",
+                        "text": "string"
+                    },
+                    "name": "MyColumn9",
+                    "designerId": "8e81195b-42cd-4e29-99be-c510c1a43e73"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "id_estado",
+                        "hidden": true,
+                        "text": "Estado"
+                    },
+                    "configAlternates": {
+                        "dataIndex": "datafield",
+                        "text": "string",
+                        "hidden": "boolean"
+                    },
+                    "name": "MyColumn",
+                    "designerId": "0517f962-e313-4040-8008-697de38a8721"
+                },
+                {
+                    "type": "Ext.grid.column.Number",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "aforo",
+                        "format": "0,000",
+                        "hidden": true,
+                        "text": "Aforo"
+                    },
+                    "configAlternates": {
+                        "dataIndex": "datafield",
+                        "text": "string",
+                        "format": "string",
+                        "hidden": "boolean"
+                    },
+                    "name": "MyNumberColumn6",
+                    "designerId": "468ad621-5e27-4cc3-bbd9-cb769b72897c"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "id_tipo",
+                        "hidden": true,
+                        "text": "Tipo"
+                    },
+                    "configAlternates": {
+                        "dataIndex": "datafield",
+                        "text": "string",
+                        "hidden": "boolean"
+                    },
+                    "name": "MyColumn1",
+                    "designerId": "15c05238-fe60-427e-be7c-20d6acf1c2f5"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "id_lugar",
+                        "hidden": true,
+                        "text": "Lugar"
+                    },
+                    "configAlternates": {
+                        "dataIndex": "datafield",
+                        "text": "string",
+                        "hidden": "boolean"
+                    },
+                    "name": "MyColumn3",
+                    "designerId": "9c3e28fc-a6f2-4794-8e2e-7ad05a68e46e"
+                },
+                {
+                    "type": "Ext.grid.column.Number",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "nivel",
+                        "format": "0,000",
+                        "hidden": true,
+                        "text": "Nivel"
+                    },
+                    "configAlternates": {
+                        "dataIndex": "datafield",
+                        "text": "string",
+                        "format": "string",
+                        "hidden": "boolean"
+                    },
+                    "name": "MyNumberColumn9",
+                    "designerId": "6258b56b-a50b-4081-ad30-82f02db5133c"
+                },
+                {
+                    "type": "Ext.grid.column.Date",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "hora_inicio",
+                        "format": "H:i",
+                        "text": "Hora Inicio"
+                    },
+                    "configAlternates": {
+                        "dataIndex": "datafield",
+                        "format": "string",
+                        "hidden": "boolean",
+                        "text": "string"
+                    },
+                    "name": "MyDateColumn2",
+                    "designerId": "44fd2ac3-08cc-4bd1-b1ed-435af7ef7062",
+                    "cn": [
+                        {
+                            "type": "Ext.form.field.Time",
+                            "reference": {
+                                "name": "editor",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "allowBlank": false,
+                                "format": "H:i",
+                                "name": "hora_inicio"
+                            },
+                            "configAlternates": {
+                                "name": "string",
+                                "format": "string",
+                                "allowBlank": "boolean"
+                            },
+                            "name": "MyTimeField",
+                            "designerId": "ccf162ff-a998-49ac-abe7-12ec49ecc72f"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.grid.column.Date",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "hora_fin",
+                        "format": "H:i",
+                        "text": "Hora Fin"
+                    },
+                    "configAlternates": {
+                        "dataIndex": "datafield",
+                        "format": "string",
+                        "hidden": "boolean",
+                        "text": "string"
+                    },
+                    "name": "MyDateColumn3",
+                    "designerId": "e232c058-8c85-4bac-8d38-2d3f5e248538",
+                    "cn": [
+                        {
+                            "type": "Ext.form.field.Time",
+                            "reference": {
+                                "name": "editor",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "allowBlank": false,
+                                "format": "H:i",
+                                "name": "hora_fin"
+                            },
+                            "configAlternates": {
+                                "name": "string",
+                                "format": "string",
+                                "allowBlank": "boolean"
+                            },
+                            "name": "MyTimeField1",
+                            "designerId": "b0f03f00-7d9d-4b33-8697-6cb0d6610189"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.grid.column.Date",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "intervalo",
+                        "format": "H:i",
+                        "text": "Intervalo"
+                    },
+                    "configAlternates": {
+                        "dataIndex": "datafield",
+                        "hidden": "boolean",
+                        "text": "string",
+                        "format": "string"
+                    },
+                    "name": "MyDateColumn4",
+                    "designerId": "2e925137-0432-4587-a570-78308f2d6e21",
+                    "cn": [
+                        {
+                            "type": "Ext.form.field.Time",
+                            "reference": {
+                                "name": "editor",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "allowBlank": false,
+                                "format": "H:i",
+                                "name": "intervalo"
+                            },
+                            "configAlternates": {
+                                "name": "string",
+                                "allowBlank": "boolean",
+                                "format": "string"
+                            },
+                            "name": "MyTimeField2",
+                            "designerId": "608cf954-0906-4d17-86bb-cb0407c7a2fe"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.grid.plugin.RowEditing",
+                    "reference": {
+                        "name": "plugins",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "name": "MyRowEditingPlugin3",
+                    "designerId": "bf011f74-04c4-4c46-9597-e70c4e4e4630",
+                    "cn": [
+                        {
+                            "type": "viewcontrollereventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onRowEditingEdit",
+                                "implHandler": [
+                                    "var store = Ext.getStore('Lugar');",
+                                    "        var rec = context.record;",
+                                    "        store.sync(",
+                                    "        {",
+                                    "            params:{",
+                                    "                id: rec.data.id",
+                                    "            },",
+                                    "",
+                                    "            success: function(batch, success)",
+                                    "            {",
+                                    "                Ext.Ajax.request({",
+                                    "                        url: '../servidor/reservas_puce/horario/create',",
+                                    "                        method:\"post\",",
+                                    "",
+                                    "                        params:{",
+                                    "                            id:rec.data.id,",
+                                    "                        },",
+                                    "",
+                                    "                        success: function(batch, success)",
+                                    "                        {",
+                                    "                            ",
+                                    "                            store.load();",
+                                    "                            ",
+                                    "                        },",
+                                    "",
+                                    "                        failure: function(batch, success)",
+                                    "                        {",
+                                    "                            Ext.Msg.alert('Error', 'Hubor un error');",
+                                    "                        }",
+                                    "                    });",
+                                    "            },",
+                                    "",
+                                    "            failure: function(batch, success)",
+                                    "            {",
+                                    "                Ext.Msg.alert('Error', 'Hubor un error');",
+                                    "            }",
+                                    "        });"
+                                ],
+                                "name": "edit",
+                                "scope": "me"
+                            },
+                            "configAlternates": {
+                                "fn": "string",
+                                "implHandler": "code",
+                                "name": "string",
+                                "scope": "string"
+                            },
+                            "name": "onRowEditingEdit",
+                            "designerId": "4b6ea15e-41b4-47c9-98eb-a1e0c32296dd"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Ext.toolbar.Toolbar",
+            "reference": {
+                "name": "dockedItems",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dock": "top"
+            },
+            "configAlternates": {
+                "dock": "string"
+            },
+            "name": "MyToolbar1",
+            "designerId": "7a2662ad-e6b0-4605-9d30-a21e21206989",
+            "cn": [
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "id": "btnHorarioNuevo",
+                        "layout|flex": null,
+                        "text": "Nuevo"
+                    },
+                    "configAlternates": {
+                        "id": "string",
+                        "layout|flex": "number",
+                        "text": "string"
+                    },
+                    "name": "MyButton3",
+                    "designerId": "c7e9992c-cc77-41a4-aa56-36708683118f",
+                    "cn": [
+                        {
+                            "type": "viewcontrollereventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onBtnHorarioNuevoClick",
+                                "implHandler": [
+                                    "if(!Ext.getCmp('wndNuevoHorario'))",
+                                    "{",
+                                    "    var store = Ext.getStore('Lugar');",
+                                    "    store.proxy.extraParams = {",
+                                    "        busqueda: 2",
+                                    "    };",
+                                    "    store.load();",
+                                    "    var win = Ext.create('reservas_puce.view.wndNuevoHorario');",
+                                    "    win.show();",
+                                    "}"
+                                ],
+                                "name": "click",
+                                "scope": "me"
+                            },
+                            "configAlternates": {
+                                "fn": "string",
+                                "implHandler": "code",
+                                "name": "string",
+                                "scope": "string"
+                            },
+                            "name": "onBtnHorarioNuevoClick",
+                            "designerId": "1daf52a3-8294-46ee-974e-e1c0639f419b"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "id": "btnHorarioEliminar",
+                        "layout|flex": null,
+                        "text": "Eliminar"
+                    },
+                    "configAlternates": {
+                        "id": "string",
+                        "layout|flex": "number",
+                        "text": "string"
+                    },
+                    "name": "MyButton4",
+                    "designerId": "e343d38c-9c03-4461-b0db-663515457e14",
+                    "cn": [
+                        {
+                            "type": "viewcontrollereventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onBtnHorarioEliminarClick",
+                                "implHandler": [
+                                    "var g = Ext.getCmp('grdHorario');",
+                                    "        var arrayKeys = g.getSelectionModel().selected.items;",
+                                    "        var indice = g.getSelectionModel().selectionStartIdx;",
+                                    "",
+                                    "        if(arrayKeys.length === 0)",
+                                    "        Ext.Msg.alert('Error', 'Debe escoger un horario');",
+                                    "        else",
+                                    "        {",
+                                    "            var store = g.getStore();",
+                                    "            var rec = g.selection;",
+                                    "            Ext.Ajax.request({",
+                                    "                url: '../servidor/reservas_puce/lugar/deleteHorario',",
+                                    "                method:\"post\",",
+                                    "                params: {",
+                                    "                    id: rec.data.id",
+                                    "                },",
+                                    "                success: function( result, request ) {",
+                                    "                    var responseData = Ext.JSON.decode(result.responseText);",
+                                    "                    if(responseData.success)",
+                                    "                    {",
+                                    "                                var storeLugar = Ext.getStore('Lugar');",
+                                    "                                storeLugar.proxy.extraParams = {",
+                                    "                                    busqueda: 1",
+                                    "                                };",
+                                    "                                storeLugar.load();",
+                                    "                                Ext.Msg.alert('Alerta', 'Se ha eliminado el registro exitosamente');",
+                                    "",
+                                    "                    }",
+                                    "                    else",
+                                    "                    {",
+                                    "                        Ext.Msg.alert('Alerta','Este registro tiene datos asociados.');",
+                                    "                    }",
+                                    "                },",
+                                    "",
+                                    "                failure: function(response, opts) {",
+                                    "                    console.log('server-side failure with status code ' + response.status);",
+                                    "                }",
+                                    "            });",
+                                    "        }"
+                                ],
+                                "name": "click",
+                                "scope": "me"
+                            },
+                            "configAlternates": {
+                                "fn": "string",
+                                "implHandler": "code",
+                                "name": "string",
+                                "scope": "string"
+                            },
+                            "name": "onBtnHorarioEliminarClick",
+                            "designerId": "47b19b3f-e683-4e8c-b97a-e8701efac3f6"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

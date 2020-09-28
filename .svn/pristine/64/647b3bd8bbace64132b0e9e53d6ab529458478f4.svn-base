@@ -1,0 +1,194 @@
+{
+    "type": "Ext.container.Viewport",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|initialView": true,
+        "designer|userAlias": "vwpt_login",
+        "designer|userClassName": "vwpt_login",
+        "layout": "fit"
+    },
+    "configAlternates": {
+        "designer|initialView": "boolean",
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "layout": "string"
+    },
+    "name": "MyViewport",
+    "designerId": "71e2a9ae-3e25-4c7a-b510-dff7da6b49ab",
+    "viewControllerInstanceId": "3cd2e603-2c3c-42f3-9ee0-f5daa658fbcc",
+    "viewModelInstanceId": "642f97ae-6eb8-48a0-8bfa-6a0317092b8d",
+    "cn": [
+        {
+            "type": "Ext.panel.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "bodyStyle": [
+                    "background-color:#666666"
+                ],
+                "layout": "center"
+            },
+            "configAlternates": {
+                "bodyStyle": "object",
+                "layout": "string"
+            },
+            "name": "MyPanel2",
+            "designerId": "c44f06a3-2d54-4a33-9643-22abeb473b44",
+            "cn": [
+                {
+                    "type": "Ext.panel.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "height": 250,
+                        "layout": "border",
+                        "title": "",
+                        "width": 600
+                    },
+                    "configAlternates": {
+                        "height": "auto",
+                        "layout": "string",
+                        "title": "string",
+                        "width": "auto"
+                    },
+                    "name": "MyPanel",
+                    "designerId": "e6462ff5-52b8-403c-a300-0034c977b4b3",
+                    "cn": [
+                        {
+                            "type": "Ext.panel.Panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "container|align": "stretch",
+                                "layout": "vbox",
+                                "layout|region": "west",
+                                "title": "",
+                                "width": 207
+                            },
+                            "configAlternates": {
+                                "container|align": "string",
+                                "layout": "string",
+                                "layout|region": "string",
+                                "title": "string",
+                                "width": "auto"
+                            },
+                            "name": "MyPanel1",
+                            "designerId": "557f1ee1-b68d-4632-899e-d4faaa42c9c0"
+                        },
+                        {
+                            "type": "Ext.form.Panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "bodyPadding": 10,
+                                "container|align": "center",
+                                "container|pack": "center",
+                                "layout": "vbox",
+                                "layout|region": "center",
+                                "title": ""
+                            },
+                            "configAlternates": {
+                                "bodyPadding": "auto",
+                                "container|align": "string",
+                                "container|pack": "string",
+                                "layout": "string",
+                                "layout|region": "string",
+                                "title": "string"
+                            },
+                            "name": "MyForm",
+                            "designerId": "55bc8084-e0c9-441b-8f9f-23ec507ee356",
+                            "cn": [
+                                {
+                                    "type": "Ext.form.field.Text",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fieldLabel": "Usuario",
+                                        "margin": "20 20 20 20"
+                                    },
+                                    "configAlternates": {
+                                        "fieldLabel": "string",
+                                        "margin": "auto"
+                                    },
+                                    "name": "MyTextField",
+                                    "designerId": "f9232c4f-5345-4996-ae29-5c4dbc06838f"
+                                },
+                                {
+                                    "type": "Ext.form.field.Text",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fieldLabel": "Contraseña",
+                                        "margin": "0 20 20 20"
+                                    },
+                                    "configAlternates": {
+                                        "fieldLabel": "string",
+                                        "margin": "auto"
+                                    },
+                                    "name": "MyTextField1",
+                                    "designerId": "140f3892-fa2c-451b-9f8e-ae8e04e0935a"
+                                },
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "margin": "0 20 20 20",
+                                        "text": "Aceptar"
+                                    },
+                                    "configAlternates": {
+                                        "margin": "auto",
+                                        "text": "string"
+                                    },
+                                    "name": "MyButton",
+                                    "designerId": "8ddb5b9e-f487-461a-86c0-44e1e3e66ac2"
+                                },
+                                {
+                                    "type": "Ext.form.field.Display",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "value": "Desarrollado por la Dirección Informática de la PUCE"
+                                    },
+                                    "configAlternates": {
+                                        "value": "string"
+                                    },
+                                    "name": "MyDisplayField",
+                                    "designerId": "40c4c411-d9b7-45b0-be4c-bc3d59157d19"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

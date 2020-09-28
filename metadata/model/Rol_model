@@ -1,0 +1,66 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Rol_model"
+    },
+    "configAlternates": {
+        "designer|userClassName": "string"
+    },
+    "name": "MyModel",
+    "designerId": "ad7aee97-4b8d-49f2-9765-9317a6a5262e",
+    "cn": [
+        {
+            "type": "Ext.data.field.String",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "id"
+            },
+            "configAlternates": {
+                "name": "string"
+            },
+            "name": "MyString5",
+            "designerId": "d2e35c83-9f43-4767-9ce0-5e1ea881bd3d"
+        },
+        {
+            "type": "Ext.data.field.String",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "descripcion"
+            },
+            "configAlternates": {
+                "name": "string"
+            },
+            "name": "MyString6",
+            "designerId": "9fd0c854-5b5f-4d77-8f57-19552a6a21dc"
+        },
+        {
+            "type": "Ext.data.field.Boolean",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "activo"
+            },
+            "configAlternates": {
+                "name": "string"
+            },
+            "name": "MyBoolean",
+            "designerId": "c587f8a4-8d2b-4500-a203-1f29ccec6eb8"
+        }
+    ]
+}

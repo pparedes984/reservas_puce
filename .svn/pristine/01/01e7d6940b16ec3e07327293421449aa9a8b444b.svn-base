@@ -1,0 +1,901 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "pnlnuevareserva",
+        "designer|userClassName": "pnlNuevaReserva",
+        "layout": "fit",
+        "title": "Nueva Reserva"
+    },
+    "configAlternates": {
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "layout": "string",
+        "title": "string"
+    },
+    "name": "pnlNuevaReservaUsuario1",
+    "designerId": "7a79bc81-e81e-48d3-bffc-22fdfb0ef232",
+    "viewControllerInstanceId": "155bfda7-b7a2-4834-9f99-50b64f4c70ba",
+    "viewModelInstanceId": "de76258e-af28-4b06-898b-cb2c38bfa87f",
+    "cn": [
+        {
+            "type": "Ext.toolbar.Toolbar",
+            "reference": {
+                "name": "dockedItems",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dock": "top"
+            },
+            "configAlternates": {
+                "dock": "string"
+            },
+            "name": "MyToolbar3",
+            "designerId": "33d86be8-acaa-4c9c-901e-66d7a81af73a",
+            "cn": [
+                {
+                    "type": "Ext.form.field.Date",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "allowBlank": false,
+                        "fieldLabel": "Fecha",
+                        "format": "Y-m-d",
+                        "id": "txtNuevaReservaFecha",
+                        "layout|flex": null
+                    },
+                    "configAlternates": {
+                        "fieldLabel": "string",
+                        "layout|flex": "number",
+                        "minValue": "object",
+                        "maxValue": "object",
+                        "format": "string",
+                        "id": "string",
+                        "allowBlank": "boolean"
+                    },
+                    "name": "MyDateField",
+                    "designerId": "6b2bcc33-1640-4267-9553-220f9d313380"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "allowBlank": false,
+                        "fieldLabel": "Usuario",
+                        "id": "txtUsuarioReserva",
+                        "layout|flex": null,
+                        "name": "usuario"
+                    },
+                    "configAlternates": {
+                        "fieldLabel": "string",
+                        "layout|flex": "number",
+                        "allowBlank": "boolean",
+                        "id": "string",
+                        "name": "string"
+                    },
+                    "name": "MyTextField6",
+                    "designerId": "b4b45cbc-c3d7-4fdd-a3cb-d645e9267ac5"
+                }
+            ]
+        },
+        {
+            "type": "Ext.panel.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "container|align": "stretch",
+                "layout": "hbox",
+                "title": ""
+            },
+            "configAlternates": {
+                "container|align": "string",
+                "layout": "string",
+                "title": "string"
+            },
+            "name": "MyPanel8",
+            "designerId": "b86c572b-d9a5-4fbe-b58e-7b4da302a285",
+            "cn": [
+                {
+                    "type": "Ext.grid.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "forceFit": true,
+                        "id": "grdNuevaReservaLugar",
+                        "layout|flex": 1,
+                        "store": "Lugar",
+                        "title": "Lugar"
+                    },
+                    "configAlternates": {
+                        "layout|flex": "number",
+                        "title": "string",
+                        "forceFit": "boolean",
+                        "id": "string",
+                        "store": "store"
+                    },
+                    "name": "MyGridPanel3",
+                    "designerId": "782309ed-418c-441f-8542-a69e2067b71d",
+                    "cn": [
+                        {
+                            "type": "Ext.grid.View",
+                            "reference": {
+                                "name": "viewConfig",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "name": "MyGridView3",
+                            "designerId": "a06cea8b-6a27-41ee-8248-aa6e1c0a040e"
+                        },
+                        {
+                            "type": "Ext.toolbar.Toolbar",
+                            "reference": {
+                                "name": "dockedItems",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dock": "top"
+                            },
+                            "configAlternates": {
+                                "dock": "string"
+                            },
+                            "name": "MyToolbar5",
+                            "designerId": "11a615ba-2b65-4166-91fd-42e95b651448",
+                            "cn": [
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "id": "btnNuevaReservaEntrar",
+                                        "layout|flex": null,
+                                        "text": "Ingresar",
+                                        "width": 65
+                                    },
+                                    "configAlternates": {
+                                        "id": "string",
+                                        "layout|flex": "number",
+                                        "text": "string",
+                                        "width": "auto"
+                                    },
+                                    "name": "MyButton5",
+                                    "designerId": "d3c08415-19e3-432e-b055-430b78d6166e",
+                                    "cn": [
+                                        {
+                                            "type": "viewcontrollereventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "onBtnNuevaReservaEntrarClick",
+                                                "implHandler": [
+                                                    "",
+                                                    "var g = Ext.getCmp('grdNuevaReservaLugar');",
+                                                    "var arrayKeys = g.getSelectionModel().selected.items;",
+                                                    "var indice = g.getSelectionModel().selectionStartIdx;",
+                                                    "",
+                                                    "if(arrayKeys.length === 0)",
+                                                    "    Ext.Msg.alert('Error', 'Debe escoger un lugar');",
+                                                    "else",
+                                                    "{",
+                                                    "    var rec = g.selection;",
+                                                    "    Ext.Ajax.request({",
+                                                    "        url: '../servidor/reservas_puce/lugar/verificar_ingreso',",
+                                                    "        method:\"post\",",
+                                                    "",
+                                                    "        params:{",
+                                                    "            id_lugar: rec.data.id",
+                                                    "        },",
+                                                    "",
+                                                    "        success: function(result, success)",
+                                                    "        {",
+                                                    "            var responseData = Ext.JSON.decode(result.responseText);",
+                                                    "            if(responseData.success)",
+                                                    "            {",
+                                                    "                var storeHorario = Ext.getStore('Horario');",
+                                                    "                storeHorario.removeAll();",
+                                                    "                var storeLugar = Ext.getStore('Lugar');",
+                                                    "                storeLugar.removeAll();",
+                                                    "                storeLugar.proxy.extraParams = {",
+                                                    "                    busqueda: 3,",
+                                                    "                    id_lugar: rec.data.id",
+                                                    "                };",
+                                                    "                storeLugar.load();",
+                                                    "            }",
+                                                    "            else",
+                                                    "                {",
+                                                    "                    Ext.Msg.alert('Alerta', 'No existen más lugares.');",
+                                                    "                }",
+                                                    "        },",
+                                                    "",
+                                                    "        failure: function(batch, success)",
+                                                    "        {",
+                                                    "            Ext.Msg.alert('Error', 'Hubor un error');",
+                                                    "        }",
+                                                    "    });",
+                                                    "}",
+                                                    ""
+                                                ],
+                                                "name": "click",
+                                                "scope": "me"
+                                            },
+                                            "configAlternates": {
+                                                "fn": "string",
+                                                "implHandler": "code",
+                                                "name": "string",
+                                                "scope": "string"
+                                            },
+                                            "name": "onBtnNuevaReservaEntrarClick",
+                                            "designerId": "23136b29-730c-4bea-a4cd-885281ef4b2f"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "id": "btnNuevaReservaRegresar",
+                                        "layout|flex": null,
+                                        "text": "Regresar",
+                                        "width": 76
+                                    },
+                                    "configAlternates": {
+                                        "layout|flex": "number",
+                                        "text": "string",
+                                        "id": "string",
+                                        "width": "auto"
+                                    },
+                                    "name": "MyButton9",
+                                    "designerId": "42cdb3d7-a6e8-4267-9102-8d9a5fb8e4f4",
+                                    "cn": [
+                                        {
+                                            "type": "viewcontrollereventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "onBtnNuevaReservaRegresarClick",
+                                                "implHandler": [
+                                                    "var storeHorario = Ext.getStore('Horario');",
+                                                    "storeHorario.removeAll();",
+                                                    "var storeLugar = Ext.getStore('Lugar');",
+                                                    "var records = storeLugar.getData().items;",
+                                                    "Ext.Ajax.request({",
+                                                    "    url: '../servidor/reservas_puce/lugar/verificar_regreso',",
+                                                    "    method:\"post\",",
+                                                    "",
+                                                    "    params:{",
+                                                    "        id_lugar: records[0].data.id_lugar",
+                                                    "    },",
+                                                    "",
+                                                    "    success: function(result, success)",
+                                                    "    {",
+                                                    "        var responseData = Ext.JSON.decode(result.responseText);",
+                                                    "        if(responseData.success)",
+                                                    "        {",
+                                                    "            storeLugar.proxy.extraParams = {",
+                                                    "                busqueda: 4,",
+                                                    "                id_lugar: records[0].data.id_lugar",
+                                                    "            };",
+                                                    "            storeLugar.removeAll();",
+                                                    "            storeLugar.load();}",
+                                                    "        else",
+                                                    "        {",
+                                                    "            Ext.Msg.alert('Alerta', 'No existen más lugares.');",
+                                                    "        }",
+                                                    "    },",
+                                                    "",
+                                                    "    failure: function(batch, success)",
+                                                    "    {",
+                                                    "        Ext.Msg.alert('Error', 'Hubor un error');",
+                                                    "    }",
+                                                    "});"
+                                                ],
+                                                "name": "click",
+                                                "scope": "me"
+                                            },
+                                            "configAlternates": {
+                                                "fn": "string",
+                                                "implHandler": "code",
+                                                "name": "string",
+                                                "scope": "string"
+                                            },
+                                            "name": "onBtnNuevaReservaRegresarClick",
+                                            "designerId": "e3dd75fd-3aff-4c51-a0cf-fe3bb674b61a"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.grid.column.Number",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "id",
+                                "hidden": true,
+                                "text": "ID"
+                            },
+                            "configAlternates": {
+                                "dataIndex": "datafield",
+                                "hidden": "boolean",
+                                "text": "string"
+                            },
+                            "name": "MyNumberColumn2",
+                            "designerId": "ce804a54-e353-41dd-a60d-4cb846de57b1"
+                        },
+                        {
+                            "type": "Ext.grid.column.Column",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "descripcion",
+                                "text": "Descripcion"
+                            },
+                            "configAlternates": {
+                                "dataIndex": "datafield",
+                                "text": "string"
+                            },
+                            "name": "MyColumn1",
+                            "designerId": "3f8eab97-4707-4f0c-a542-6ce765580025"
+                        },
+                        {
+                            "type": "Ext.grid.column.Number",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "id_estado",
+                                "hidden": true,
+                                "text": "Id Estado"
+                            },
+                            "configAlternates": {
+                                "dataIndex": "datafield",
+                                "hidden": "boolean",
+                                "text": "string"
+                            },
+                            "name": "MyNumberColumn5",
+                            "designerId": "2e08acff-5f21-4e8b-9c57-fdc334664e70"
+                        },
+                        {
+                            "type": "Ext.grid.column.Number",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "aforo",
+                                "hidden": true,
+                                "text": "Aforo"
+                            },
+                            "configAlternates": {
+                                "dataIndex": "datafield",
+                                "hidden": "boolean",
+                                "text": "string"
+                            },
+                            "name": "MyNumberColumn6",
+                            "designerId": "ce82cf42-b81a-4123-a007-3e5e79ed0d2f"
+                        },
+                        {
+                            "type": "Ext.grid.column.Number",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "id_lugar",
+                                "hidden": true,
+                                "text": "Id Lugar"
+                            },
+                            "configAlternates": {
+                                "dataIndex": "datafield",
+                                "hidden": "boolean",
+                                "text": "string"
+                            },
+                            "name": "MyNumberColumn7",
+                            "designerId": "afc3670c-c03f-4070-8063-1e60f9f239fc"
+                        },
+                        {
+                            "type": "Ext.grid.column.Number",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "nivel",
+                                "hidden": true,
+                                "text": "Nivel"
+                            },
+                            "configAlternates": {
+                                "dataIndex": "datafield",
+                                "hidden": "boolean",
+                                "text": "string"
+                            },
+                            "name": "MyNumberColumn8",
+                            "designerId": "09811092-2171-43c0-b83f-4aefb1042c22"
+                        },
+                        {
+                            "type": "viewcontrollereventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onGrdNuevaReservaLugarCellClick",
+                                "implHandler": [
+                                    "var lugar = record.data.id;",
+                                    "    var store = Ext.getStore('Horario');",
+                                    "    store.removeAll();",
+                                    "    store.proxy.extraParams = {",
+                                    "        id: lugar",
+                                    "    };",
+                                    "    store.load();"
+                                ],
+                                "name": "cellclick",
+                                "scope": "me"
+                            },
+                            "configAlternates": {
+                                "fn": "string",
+                                "implHandler": "code",
+                                "name": "string",
+                                "scope": "string"
+                            },
+                            "name": "onGrdNuevaReservaLugarCellClick",
+                            "designerId": "14ff3ee1-bc91-4ddb-8aa9-9e52776b1809"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.grid.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "forceFit": true,
+                        "id": "grdNuevaReservaHorario",
+                        "layout|flex": 1,
+                        "store": "Horario",
+                        "title": "Horario"
+                    },
+                    "configAlternates": {
+                        "layout|flex": "number",
+                        "title": "string",
+                        "forceFit": "boolean",
+                        "store": "store",
+                        "id": "string"
+                    },
+                    "name": "MyGridPanel4",
+                    "designerId": "f6d3f80d-86ef-482e-b7bf-67de73ec01f7",
+                    "cn": [
+                        {
+                            "type": "Ext.grid.View",
+                            "reference": {
+                                "name": "viewConfig",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "name": "MyGridView4",
+                            "designerId": "2325cfdf-1894-4454-9c07-577333c7e5ac"
+                        },
+                        {
+                            "type": "Ext.toolbar.Toolbar",
+                            "reference": {
+                                "name": "dockedItems",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dock": "top",
+                                "height": 36
+                            },
+                            "configAlternates": {
+                                "dock": "string",
+                                "height": "auto"
+                            },
+                            "name": "MyToolbar6",
+                            "designerId": "d8b464ab-2a42-4b1e-a643-e2816095a5f7"
+                        },
+                        {
+                            "type": "Ext.grid.column.Number",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "id",
+                                "hidden": true,
+                                "text": "ID"
+                            },
+                            "configAlternates": {
+                                "dataIndex": "datafield",
+                                "hidden": "boolean",
+                                "text": "string"
+                            },
+                            "name": "MyNumberColumn3",
+                            "designerId": "12ece5c5-7256-4687-9289-a37689c8bbdd"
+                        },
+                        {
+                            "type": "Ext.grid.column.Number",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "id_lugar",
+                                "hidden": true,
+                                "text": "Id Lugar"
+                            },
+                            "configAlternates": {
+                                "dataIndex": "datafield",
+                                "hidden": "boolean",
+                                "text": "string"
+                            },
+                            "name": "MyNumberColumn9",
+                            "designerId": "b799b5ed-3756-4209-9ac1-02508f756921"
+                        },
+                        {
+                            "type": "Ext.grid.column.Date",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "hora_inicio",
+                                "format": "H:i",
+                                "text": "Hora Inicio"
+                            },
+                            "configAlternates": {
+                                "dataIndex": "datafield",
+                                "format": "string",
+                                "text": "string"
+                            },
+                            "name": "MyDateColumn",
+                            "designerId": "e7fe2b04-0554-4116-974c-abe32d9e7a21"
+                        },
+                        {
+                            "type": "Ext.grid.column.Date",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "hora_fin",
+                                "format": "H:i",
+                                "text": "Hora Fin"
+                            },
+                            "configAlternates": {
+                                "dataIndex": "datafield",
+                                "format": "string",
+                                "text": "string"
+                            },
+                            "name": "MyDateColumn3",
+                            "designerId": "298c71ac-71f5-45c5-8d0c-8c6bb388c3b2"
+                        },
+                        {
+                            "type": "Ext.grid.column.Boolean",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "estado",
+                                "hidden": true,
+                                "text": "Estado"
+                            },
+                            "configAlternates": {
+                                "dataIndex": "datafield",
+                                "hidden": "boolean",
+                                "text": "string"
+                            },
+                            "name": "MyBooleanColumn1",
+                            "designerId": "3f6990d1-2501-4de1-be5a-f8d3ed116d78"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Ext.toolbar.Toolbar",
+            "reference": {
+                "name": "dockedItems",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dock": "bottom"
+            },
+            "configAlternates": {
+                "dock": "string"
+            },
+            "name": "MyToolbar4",
+            "designerId": "55ea37da-7bb7-4a7c-83f2-2ce9b6c825e6",
+            "cn": [
+                {
+                    "type": "Ext.toolbar.Fill",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": null
+                    },
+                    "configAlternates": {
+                        "layout|flex": "number"
+                    },
+                    "name": "MyFill",
+                    "designerId": "1bf254cd-8bb5-4e44-a0bd-b4b58f958640"
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "id": "btnNuevaReservaCancelar",
+                        "layout|flex": null,
+                        "text": "Cancelar"
+                    },
+                    "configAlternates": {
+                        "id": "string",
+                        "layout|flex": "number",
+                        "text": "string"
+                    },
+                    "name": "MyButton7",
+                    "designerId": "af4e5a47-09d5-4010-bcc9-d4b11d457d5e",
+                    "cn": [
+                        {
+                            "type": "viewcontrollereventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onBtnNuevaReservaCancelarClick",
+                                "implHandler": [
+                                    "if(!Ext.getCmp('pnlReservaUsuario'))",
+                                    "        {",
+                                    "            ME.getView().down('#pnlCentral').removeAll();",
+                                    "            var panel = Ext.create('reservas_puce.view.pnlReserva');",
+                                    "            ME.getView().down('#pnlCentral').add(panel);",
+                                    "        }"
+                                ],
+                                "name": "click",
+                                "scope": "me"
+                            },
+                            "configAlternates": {
+                                "fn": "string",
+                                "implHandler": "code",
+                                "name": "string",
+                                "scope": "string"
+                            },
+                            "name": "onBtnNuevaReservaCancelarClick",
+                            "designerId": "ab610f36-660f-48ae-8099-c36347f7f5ad"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "id": "btnNuevaReservaGuardar",
+                        "layout|flex": null,
+                        "text": "Guardar"
+                    },
+                    "configAlternates": {
+                        "layout|flex": "number",
+                        "text": "string",
+                        "id": "string"
+                    },
+                    "name": "MyButton8",
+                    "designerId": "69a342f6-d991-4bd1-9de3-eeaf641973e8",
+                    "cn": [
+                        {
+                            "type": "viewcontrollereventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onBtnNuevaReservaGuardarClick",
+                                "implHandler": [
+                                    "var lugar = Ext.getCmp('grdNuevaReservaLugar');",
+                                    "var lugar_arrayKeys = lugar.getSelectionModel().selected.items;",
+                                    "var lugar_indice = lugar.getSelectionModel().selectionStartIdx;",
+                                    "",
+                                    "if(lugar_arrayKeys.length === 0)",
+                                    "    Ext.Msg.alert('Error', 'Debe escoger un lugar');",
+                                    "else",
+                                    "{",
+                                    "    var horario = Ext.getCmp('grdNuevaReservaHorario');",
+                                    "    var horario_arrayKeys = horario.getSelectionModel().selected.items;",
+                                    "    var horario_indice = horario.getSelectionModel().selectionStartIdx;",
+                                    "",
+                                    "    if(horario_arrayKeys.length === 0)",
+                                    "        Ext.Msg.alert('Error', 'Debe escoger un horario');",
+                                    "    else",
+                                    "    {",
+                                    "        if(Ext.getCmp('txtNuevaReservaFecha').getValue() === null || Ext.getCmp('txtUsuarioReserva').getValue() === '' ){",
+                                    "            Ext.Msg.alert('Error', 'Debe escoger una fecha o añadir un usuario');",
+                                    "        }",
+                                    "        else{",
+                                    "            var lugar_rec = lugar.selection;",
+                                    "            var horario_rec = horario.selection;",
+                                    "            Ext.Ajax.request({",
+                                    "                url: '../servidor/reservas_puce/reserva/verificar_aforo',",
+                                    "                method:\"post\",",
+                                    "",
+                                    "                params:{",
+                                    "                    lugar:lugar_rec.data.id,",
+                                    "                    horario:horario_rec.data.id,",
+                                    "                    fecha:Ext.getCmp('txtNuevaReservaFecha').getValue()",
+                                    "                },",
+                                    "",
+                                    "                success: function(result, success)",
+                                    "                {",
+                                    "                    var responseData = Ext.JSON.decode(result.responseText);",
+                                    "                    if(responseData.success)",
+                                    "                    {",
+                                    "",
+                                    "                        Ext.Ajax.request({",
+                                    "                            url: '../servidor/reservas_puce/reserva/verificar_reserva',",
+                                    "                            method:\"post\",",
+                                    "",
+                                    "                            params:{",
+                                    "                                fecha:Ext.getCmp('txtNuevaReservaFecha').getValue()",
+                                    "                            },",
+                                    "",
+                                    "                            success: function(result, success)",
+                                    "                            {",
+                                    "                                var responseData = Ext.JSON.decode(result.responseText);",
+                                    "                                if(responseData.success)",
+                                    "                                {",
+                                    "                                    Ext.Ajax.request({",
+                                    "                                        url: '../servidor/reservas_puce/reserva/create',",
+                                    "                                        method:\"post\",",
+                                    "",
+                                    "                                        params:{",
+                                    "                                            lugar:lugar_rec.data.id,",
+                                    "                                            horario:horario_rec.data.id,",
+                                    "                                            fecha:Ext.getCmp('txtNuevaReservaFecha').getValue(),",
+                                    "                                            usuario: Ext.getCmp('txtUsuarioReserva').getValue(),",
+                                    "                                            bandera: 1",
+                                    "",
+                                    "                                        },",
+                                    "",
+                                    "                                        success: function(batch, success)",
+                                    "                                        {",
+                                    "                                            if(!Ext.getCmp('pnlReserva'))",
+                                    "                                            {",
+                                    "                                                ME.getView().down('#pnlCentral').removeAll();",
+                                    "                                                var panel = Ext.create('reservas_puce.view.pnlReserva');",
+                                    "                                                var storeReserva = Ext.getStore('Reserva');",
+                                    "                                                storeReserva.load();",
+                                    "                                                ME.getView().down('#pnlCentral').add(panel);",
+                                    "                                            }",
+                                    "                                            Ext.Msg.alert('Datos Guardados','Se han guardado los datos exitosamente');",
+                                    "                                        },",
+                                    "",
+                                    "                                        failure: function(batch, success)",
+                                    "                                        {",
+                                    "                                            Ext.Msg.alert('Error', 'Hubor un error');",
+                                    "                                        }",
+                                    "                                    });",
+                                    "                                }",
+                                    "                                else",
+                                    "                                {",
+                                    "                                    Ext.Msg.alert('Alerta','Ya tiene reservas este día.');",
+                                    "                                }",
+                                    "                            },",
+                                    "",
+                                    "                            failure: function(batch, success)",
+                                    "                            {",
+                                    "                                Ext.Msg.alert('Error', 'Hubor un error');",
+                                    "                            }",
+                                    "                        });",
+                                    "                    }",
+                                    "                    else",
+                                    "                    {",
+                                    "                        Ext.Msg.alert('Alerta','Este lugar se encuentra lleno, elija otro lugar u horario.');",
+                                    "                    }",
+                                    "                },",
+                                    "",
+                                    "                failure: function(batch, success)",
+                                    "                {",
+                                    "                    Ext.Msg.alert('Error', 'Hubor un error');",
+                                    "                }",
+                                    "            });",
+                                    "        }",
+                                    "    }",
+                                    "}"
+                                ],
+                                "name": "click",
+                                "scope": "me"
+                            },
+                            "configAlternates": {
+                                "fn": "string",
+                                "implHandler": "code",
+                                "name": "string",
+                                "scope": "string"
+                            },
+                            "name": "onBtnNuevaReservaGuardarClick",
+                            "designerId": "5fbcb488-9a5e-4228-bc7f-20b000515e02"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.toolbar.Fill",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": null
+                    },
+                    "configAlternates": {
+                        "layout|flex": "number"
+                    },
+                    "name": "MyFill1",
+                    "designerId": "15032649-19ea-4ef3-8537-44c0a8e3d67a"
+                }
+            ]
+        }
+    ]
+}

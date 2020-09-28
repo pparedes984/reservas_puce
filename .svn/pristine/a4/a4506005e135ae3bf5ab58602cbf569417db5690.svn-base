@@ -1,0 +1,250 @@
+{
+    "type": "Ext.window.Window",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "wndnuevotipo",
+        "designer|userClassName": "wndNuevoTipo",
+        "id": "wndNuevoTipo",
+        "layout": "fit",
+        "modal": true,
+        "title": "Nuevo Tipo",
+        "width": 450
+    },
+    "configAlternates": {
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "id": "string",
+        "layout": "string",
+        "modal": "boolean",
+        "title": "string",
+        "width": "auto"
+    },
+    "name": "wndNuevoUsuario1",
+    "designerId": "b767ebf1-d01e-4c5a-b830-a0eaac44957b",
+    "viewControllerInstanceId": "dc7541e3-c18c-43e8-bce5-5693486575a9",
+    "viewModelInstanceId": "bcd97171-30a5-409b-8b88-7d86f4abd183",
+    "cn": [
+        {
+            "type": "Ext.form.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "bodyPadding": 10,
+                "container|align": "center",
+                "id": "frmNuevoTipo",
+                "layout": "vbox",
+                "title": ""
+            },
+            "configAlternates": {
+                "bodyPadding": "auto",
+                "container|align": "string",
+                "id": "string",
+                "layout": "string",
+                "title": "string"
+            },
+            "name": "MyForm",
+            "designerId": "40f7c243-22e0-4f30-b07f-6746b2ba2f41",
+            "cn": [
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "allowBlank": false,
+                        "fieldLabel": "Descripción",
+                        "id": "txtNuevoTipoDescripcion",
+                        "labelWidth": 80,
+                        "name": "descripcion"
+                    },
+                    "configAlternates": {
+                        "allowBlank": "boolean",
+                        "fieldLabel": "string",
+                        "labelWidth": "number",
+                        "name": "string",
+                        "id": "string"
+                    },
+                    "name": "MyTextField",
+                    "designerId": "44d0f147-d036-457f-971a-6b911f00f77e"
+                },
+                {
+                    "type": "Ext.form.FieldContainer",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "container|align": "middle",
+                        "container|pack": "center",
+                        "fieldLabel": "",
+                        "height": 37,
+                        "layout": "hbox",
+                        "layout|flex": null,
+                        "width": 400
+                    },
+                    "configAlternates": {
+                        "container|align": "string",
+                        "container|pack": "string",
+                        "fieldLabel": "string",
+                        "height": "auto",
+                        "layout": "string",
+                        "layout|flex": "number",
+                        "width": "auto"
+                    },
+                    "name": "MyFieldContainer",
+                    "designerId": "b4f5a829-e5f6-456e-9b83-4b65c5dff7bb",
+                    "cn": [
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "id": "btnTipoCancelar",
+                                "text": "Cancelar"
+                            },
+                            "configAlternates": {
+                                "id": "string",
+                                "text": "string"
+                            },
+                            "name": "MyButton",
+                            "designerId": "965ac894-62a7-4134-9e70-7a58881d4137",
+                            "cn": [
+                                {
+                                    "type": "viewcontrollereventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "onBtnTipoCancelarClick",
+                                        "implHandler": [
+                                            " Ext.getCmp('wndNuevoTipo').close();"
+                                        ],
+                                        "name": "click",
+                                        "scope": "me"
+                                    },
+                                    "configAlternates": {
+                                        "fn": "string",
+                                        "implHandler": "code",
+                                        "name": "string",
+                                        "scope": "string"
+                                    },
+                                    "name": "onBtnTipoCancelarClick",
+                                    "designerId": "b4682de0-0c08-4af9-ab59-e0f4271e1eeb"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "id": "btnTipoGuardar",
+                                "margin": "0 0 0 10",
+                                "text": "Guardar"
+                            },
+                            "configAlternates": {
+                                "id": "string",
+                                "margin": "auto",
+                                "text": "string"
+                            },
+                            "name": "MyButton1",
+                            "designerId": "04522907-8847-4661-a846-7fd8c66830b7",
+                            "cn": [
+                                {
+                                    "type": "viewcontrollereventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "onBtnTipoGuardarClick",
+                                        "implHandler": [
+                                            "var form = Ext.getCmp('frmNuevoTipo').getForm(),",
+                                            "    store = Ext.getStore('Tipo');",
+                                            "if (form.isValid()) {",
+                                            "    Ext.Ajax.request({",
+                                            "        url: '../servidor/reservas_puce/tipo/verificar',",
+                                            "        method:\"post\",",
+                                            "        params: {",
+                                            "            descripcion: Ext.getCmp('txtNuevoTipoDescripcion').getValue()",
+                                            "        },",
+                                            "        success: function( result, request ) {",
+                                            "            var responseData = Ext.JSON.decode(result.responseText);",
+                                            "            if(responseData.success)",
+                                            "            {",
+                                            "                var values = form.getValues();",
+                                            "                store.add(values);",
+                                            "                store.sync(",
+                                            "                    {",
+                                            "                        success: function(batch, options)",
+                                            "                        {",
+                                            "                            Ext.getCmp('wndNuevoTipo').close();",
+                                            "                            store.load();",
+                                            "                            Ext.Msg.alert('Datos Guardados','Se han guardado los datos exitosamente');",
+                                            "                        },",
+                                            "                        failure: function(batch, options)",
+                                            "                        {",
+                                            "",
+                                            "                            Ext.Msg.alert('Advertencia', 'Hubo un error.');",
+                                            "                            store.load();",
+                                            "                        }",
+                                            "                    }",
+                                            "                );",
+                                            "            }",
+                                            "            else",
+                                            "            {",
+                                            "                Ext.Msg.alert('Alerta','Este tipo ya está ingresado.');",
+                                            "            }",
+                                            "        },",
+                                            "",
+                                            "        failure: function(response, opts) {",
+                                            "            Ext.Msg.alert('Alerta','Este tipo ya está ingresado.');",
+                                            "",
+                                            "        }",
+                                            "    });",
+                                            "}",
+                                            "else",
+                                            "{",
+                                            "    Ext.Msg.alert('Error','Ingrese los datos correctamente');",
+                                            "}",
+                                            ""
+                                        ],
+                                        "name": "click",
+                                        "scope": "me"
+                                    },
+                                    "configAlternates": {
+                                        "fn": "string",
+                                        "implHandler": "code",
+                                        "name": "string",
+                                        "scope": "string"
+                                    },
+                                    "name": "onBtnTipoGuardarClick",
+                                    "designerId": "339fddcf-f7b0-40fc-b44f-1709691d02c0"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

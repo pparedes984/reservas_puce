@@ -1,0 +1,357 @@
+{
+    "type": "Ext.window.Window",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "wndnuevohorario",
+        "designer|userClassName": "wndNuevoHorario",
+        "id": "wndNuevoHorario",
+        "layout": "fit",
+        "modal": true,
+        "title": "Nuevo Horario",
+        "width": 450
+    },
+    "configAlternates": {
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "id": "string",
+        "layout": "string",
+        "modal": "boolean",
+        "title": "string",
+        "width": "auto"
+    },
+    "name": "wndNuevoLugar1",
+    "designerId": "87a6cdde-13dd-4622-9191-26043ac2220b",
+    "viewControllerInstanceId": "82b5cd3e-e31c-43f2-80b1-e39f9e37fb0c",
+    "viewModelInstanceId": "1b98d457-a4d7-487c-9f11-9b281f50512a",
+    "cn": [
+        {
+            "type": "Ext.form.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "bodyPadding": 10,
+                "container|align": "center",
+                "id": "frmNuevoHorario",
+                "layout": "vbox",
+                "title": ""
+            },
+            "configAlternates": {
+                "bodyPadding": "auto",
+                "container|align": "string",
+                "id": "string",
+                "layout": "string",
+                "title": "string"
+            },
+            "name": "MyForm",
+            "designerId": "b24c279f-159f-482f-aa78-934c57824e26",
+            "cn": [
+                {
+                    "type": "Ext.form.field.ComboBox",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "allowBlank": false,
+                        "displayField": "descripcion",
+                        "editable": false,
+                        "fieldLabel": "Lugar",
+                        "id": "cbNuevoHorarioLugar",
+                        "labelWidth": 80,
+                        "layout|flex": 1,
+                        "name": "id",
+                        "queryMode": "local",
+                        "store": "Lugar",
+                        "valueField": "id"
+                    },
+                    "configAlternates": {
+                        "allowBlank": "boolean",
+                        "displayField": "datafield",
+                        "editable": "boolean",
+                        "fieldLabel": "string",
+                        "labelWidth": "number",
+                        "layout|flex": "number",
+                        "name": "string",
+                        "queryMode": "string",
+                        "store": "store",
+                        "valueField": "datafield",
+                        "id": "string"
+                    },
+                    "name": "MyComboBox",
+                    "designerId": "c80c36a8-3b5c-4513-a754-2876eb3ddd87"
+                },
+                {
+                    "type": "Ext.form.field.Time",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "allowBlank": false,
+                        "fieldLabel": "Hora Inicio",
+                        "format": "H:i",
+                        "id": "txtNuevoHorarioHoraInicio",
+                        "labelWidth": 80,
+                        "layout|flex": 1,
+                        "name": "hora_inicio"
+                    },
+                    "configAlternates": {
+                        "allowBlank": "boolean",
+                        "fieldLabel": "string",
+                        "format": "string",
+                        "id": "string",
+                        "labelWidth": "number",
+                        "layout|flex": "number",
+                        "name": "string"
+                    },
+                    "name": "MyTimeField3",
+                    "designerId": "2c346f97-4021-4924-8e45-41af6a8577cb"
+                },
+                {
+                    "type": "Ext.form.field.Time",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "allowBlank": false,
+                        "fieldLabel": "Hora Fin",
+                        "format": "H:i",
+                        "id": "txtNuevoHorarioHoraFin",
+                        "labelWidth": 80,
+                        "layout|flex": 1,
+                        "name": "hora_fin"
+                    },
+                    "configAlternates": {
+                        "allowBlank": "boolean",
+                        "fieldLabel": "string",
+                        "format": "string",
+                        "id": "string",
+                        "labelWidth": "number",
+                        "layout|flex": "number",
+                        "name": "string"
+                    },
+                    "name": "MyTimeField4",
+                    "designerId": "a8d70e00-801a-408e-a414-4443bc89a36e"
+                },
+                {
+                    "type": "Ext.form.field.Time",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "allowBlank": false,
+                        "fieldLabel": "Intervalo",
+                        "format": "H:i",
+                        "id": "txtNuevoHorarioIntervalo",
+                        "labelWidth": 80,
+                        "layout|flex": 1,
+                        "name": "intervalo"
+                    },
+                    "configAlternates": {
+                        "allowBlank": "boolean",
+                        "fieldLabel": "string",
+                        "format": "string",
+                        "id": "string",
+                        "labelWidth": "number",
+                        "layout|flex": "number",
+                        "name": "string"
+                    },
+                    "name": "MyTimeField5",
+                    "designerId": "4e6a3244-5309-4c3f-a4e2-7dcfa855ea5e"
+                },
+                {
+                    "type": "Ext.form.FieldContainer",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "container|align": "middle",
+                        "container|pack": "center",
+                        "fieldLabel": "",
+                        "height": 37,
+                        "layout": "hbox",
+                        "layout|flex": null,
+                        "width": 400
+                    },
+                    "configAlternates": {
+                        "container|align": "string",
+                        "container|pack": "string",
+                        "fieldLabel": "string",
+                        "height": "auto",
+                        "layout": "string",
+                        "layout|flex": "number",
+                        "width": "auto"
+                    },
+                    "name": "MyFieldContainer",
+                    "designerId": "7d7235c6-b2b0-46c0-9f66-159618454855",
+                    "cn": [
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "id": "btnHorarioCancelar",
+                                "text": "Cancelar"
+                            },
+                            "configAlternates": {
+                                "id": "string",
+                                "text": "string"
+                            },
+                            "name": "MyButton",
+                            "designerId": "438d523a-3c6c-41b1-9528-31600f1d9fe1",
+                            "cn": [
+                                {
+                                    "type": "viewcontrollereventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "onBtnHorarioCancelarClick",
+                                        "implHandler": [
+                                            "var store = Ext.getStore('Lugar');",
+                                            "store.proxy.extraParams = {",
+                                            "    busqueda: 1",
+                                            "};",
+                                            "store.load(); ",
+                                            "Ext.getCmp('wndNuevoHorario').close();"
+                                        ],
+                                        "name": "click",
+                                        "scope": "me"
+                                    },
+                                    "configAlternates": {
+                                        "fn": "string",
+                                        "implHandler": "code",
+                                        "name": "string",
+                                        "scope": "string"
+                                    },
+                                    "name": "onBtnHorarioCancelarClick",
+                                    "designerId": "783ab816-31bd-41da-af59-9eecb50ee21f"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "id": "btnHorarioGuardar",
+                                "margin": "0 0 0 10",
+                                "text": "Guardar"
+                            },
+                            "configAlternates": {
+                                "id": "string",
+                                "margin": "auto",
+                                "text": "string"
+                            },
+                            "name": "MyButton1",
+                            "designerId": "74980d4a-0033-40b5-9488-2defa353f19d",
+                            "cn": [
+                                {
+                                    "type": "viewcontrollereventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "onBtnHorarioGuardarClick",
+                                        "implHandler": [
+                                            "var form = Ext.getCmp('frmNuevoHorario').getForm(),",
+                                            "    store = Ext.getStore('Lugar');",
+                                            "if (form.isValid()) {",
+                                            "",
+                                            "    Ext.Ajax.request({",
+                                            "        url: '../servidor/reservas_puce/lugar/updateHorario',",
+                                            "        method:\"post\",",
+                                            "",
+                                            "        params:{",
+                                            "            id:Ext.getCmp('cbNuevoHorarioLugar').getValue(),",
+                                            "            hora_inicio:Ext.getCmp('txtNuevoHorarioHoraInicio').getValue(),",
+                                            "            hora_fin:Ext.getCmp('txtNuevoHorarioHoraFin').getValue(),",
+                                            "            intervalo:Ext.getCmp('txtNuevoHorarioIntervalo').getValue()",
+                                            "        },",
+                                            "",
+                                            "        success: function(batch, success)",
+                                            "        {",
+                                            "",
+                                            "            Ext.Ajax.request({",
+                                            "                url: '../servidor/reservas_puce/horario/create',",
+                                            "                method:\"post\",",
+                                            "",
+                                            "                params:{",
+                                            "                    id:Ext.getCmp('cbNuevoHorarioLugar').getValue(),",
+                                            "                },",
+                                            "",
+                                            "                success: function(batch, success)",
+                                            "                {",
+                                            "                    store.proxy.extraParams = {",
+                                            "                        busqueda: 1",
+                                            "                    };",
+                                            "                    store.load();",
+                                            "                    Ext.getCmp('wndNuevoHorario').close();",
+                                            "                     Ext.Msg.alert('Datos Guardados','Se han guardado los datos exitosamente');",
+                                            "                },",
+                                            "",
+                                            "                failure: function(batch, success)",
+                                            "                {",
+                                            "                    Ext.Msg.alert('Error', 'Hubor un error');",
+                                            "                }",
+                                            "            });",
+                                            "        },",
+                                            "",
+                                            "        failure: function(batch, success)",
+                                            "        {",
+                                            "            Ext.Msg.alert('Error', 'Hubor un error');",
+                                            "        }",
+                                            "    });",
+                                            "",
+                                            "}",
+                                            "else",
+                                            "{",
+                                            "    Ext.Msg.alert('Error','Ingrese los datos correctamente');",
+                                            "}",
+                                            ""
+                                        ],
+                                        "name": "click",
+                                        "scope": "me"
+                                    },
+                                    "configAlternates": {
+                                        "fn": "string",
+                                        "implHandler": "code",
+                                        "name": "string",
+                                        "scope": "string"
+                                    },
+                                    "name": "onBtnHorarioGuardarClick",
+                                    "designerId": "c987ac18-1ed8-4cd6-96af-3743043fcad2"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

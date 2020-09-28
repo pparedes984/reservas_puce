@@ -1,0 +1,21 @@
+{
+    "type": "Ext.app.Application",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "name": "reservas_puce",
+        "views": [
+            "vwpt_login",
+            "vwpt_principal"
+        ]
+    },
+    "configAlternates": {
+        "name": "string",
+        "views": "typedarray"
+    },
+    "name": "Application",
+    "designerId": "application"
+}

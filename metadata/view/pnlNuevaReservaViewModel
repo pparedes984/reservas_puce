@@ -1,0 +1,18 @@
+{
+    "type": "Ext.app.ViewModel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "pnlnuevareserva",
+        "designer|userClassName": "pnlNuevaReservaViewModel"
+    },
+    "configAlternates": {
+        "designer|userAlias": "string",
+        "designer|userClassName": "string"
+    },
+    "name": "pnlNuevaReservaUsuarioViewModel1",
+    "designerId": "e5631bd8-6e04-4e3a-997d-b2b6b9bf3533"
+}

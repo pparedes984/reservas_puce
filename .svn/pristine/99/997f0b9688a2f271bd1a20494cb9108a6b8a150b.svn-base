@@ -1,0 +1,102 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Horario_Model"
+    },
+    "configAlternates": {
+        "designer|userClassName": "string"
+    },
+    "name": "MyModel",
+    "designerId": "943dc4a0-9dc5-4a05-8995-be1df3db42ad",
+    "cn": [
+        {
+            "type": "Ext.data.field.Number",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "id"
+            },
+            "configAlternates": {
+                "name": "string"
+            },
+            "name": "MyNumber9",
+            "designerId": "8404621e-e6b9-42e2-8a4c-291858e0221b"
+        },
+        {
+            "type": "Ext.data.field.Number",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "id_lugar"
+            },
+            "configAlternates": {
+                "name": "string"
+            },
+            "name": "MyNumber10",
+            "designerId": "34d5faac-cd90-4dcb-8a2a-e4a62ca3a7fa"
+        },
+        {
+            "type": "Ext.data.field.Date",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dateFormat": "H:i",
+                "name": "hora_inicio"
+            },
+            "configAlternates": {
+                "dateFormat": "string",
+                "name": "string"
+            },
+            "name": "MyDate4",
+            "designerId": "a2c793cd-8406-4dde-b1d0-055239e2ca30"
+        },
+        {
+            "type": "Ext.data.field.Date",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dateFormat": "H:i",
+                "name": "hora_fin"
+            },
+            "configAlternates": {
+                "dateFormat": "string",
+                "name": "string"
+            },
+            "name": "MyDate5",
+            "designerId": "7fb857a9-e9e3-4fde-bac4-8a2885e32910"
+        },
+        {
+            "type": "Ext.data.field.Boolean",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "estado"
+            },
+            "configAlternates": {
+                "name": "string"
+            },
+            "name": "MyBoolean1",
+            "designerId": "d577ec6d-9c77-4eef-bed4-2ce38ff06ed6"
+        }
+    ]
+}

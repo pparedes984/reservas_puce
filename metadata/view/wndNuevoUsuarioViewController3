@@ -1,0 +1,18 @@
+{
+    "type": "Ext.app.ViewController",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "wndnuevohorario",
+        "designer|userClassName": "wndNuevoUsuarioViewController3"
+    },
+    "configAlternates": {
+        "designer|userAlias": "string",
+        "designer|userClassName": "string"
+    },
+    "name": "wndNuevoUsuarioViewController3",
+    "designerId": "82b5cd3e-e31c-43f2-80b1-e39f9e37fb0c"
+}

@@ -1,0 +1,98 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Lugar_Model"
+    },
+    "configAlternates": {
+        "designer|userClassName": "string"
+    },
+    "name": "MyModel",
+    "designerId": "05432307-354a-4a59-8824-eb4636b4c614",
+    "cn": [
+        {
+            "type": "Ext.data.field.Number",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "id"
+            },
+            "configAlternates": {
+                "name": "string"
+            },
+            "name": "MyNumber",
+            "designerId": "8a5f41b3-4606-45ae-8a58-c685a31a0672"
+        },
+        {
+            "type": "Ext.data.field.String",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "descripcion"
+            },
+            "configAlternates": {
+                "name": "string"
+            },
+            "name": "MyString",
+            "designerId": "b9021fd9-eb21-42b6-8f65-623ef734f954"
+        },
+        {
+            "type": "Ext.data.field.Number",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "estado"
+            },
+            "configAlternates": {
+                "name": "string"
+            },
+            "name": "MyNumber2",
+            "designerId": "45960135-4342-4f69-8042-9752ae9c731a"
+        },
+        {
+            "type": "Ext.data.field.Number",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "aforo"
+            },
+            "configAlternates": {
+                "name": "string"
+            },
+            "name": "MyNumber1",
+            "designerId": "63bb537d-0c68-4430-baaf-a9bd23b644ce"
+        },
+        {
+            "type": "Ext.data.field.Number",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "ubicacion"
+            },
+            "configAlternates": {
+                "name": "string"
+            },
+            "name": "MyNumber3",
+            "designerId": "5c7767dc-0d19-4409-b53c-d43f54ac9981"
+        }
+    ]
+}

@@ -1,0 +1,192 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "pnllugar",
+        "designer|userClassName": "pnlLugar",
+        "layout": "fit",
+        "title": "Lugar"
+    },
+    "configAlternates": {
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "layout": "string",
+        "title": "string"
+    },
+    "name": "MyPanel8",
+    "designerId": "da5631fe-e4a0-4db9-87b2-38ef9865259c",
+    "viewControllerInstanceId": "33e197df-3b61-435a-95de-f2f5052da8d6",
+    "viewModelInstanceId": "f7741d86-dd7c-4971-8089-c70e3b842513",
+    "cn": [
+        {
+            "type": "Ext.toolbar.Toolbar",
+            "reference": {
+                "name": "dockedItems",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dock": "top"
+            },
+            "configAlternates": {
+                "dock": "string"
+            },
+            "name": "MyToolbar",
+            "designerId": "df5c3409-13d3-4a90-b71f-543cdb422338",
+            "cn": [
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": null,
+                        "text": "Nuevo"
+                    },
+                    "configAlternates": {
+                        "layout|flex": "number",
+                        "text": "string"
+                    },
+                    "name": "MyButton1",
+                    "designerId": "05156eed-04f8-4074-aa7d-3c762868152a"
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": null,
+                        "text": "Eliminar"
+                    },
+                    "configAlternates": {
+                        "layout|flex": "number",
+                        "text": "string"
+                    },
+                    "name": "MyButton2",
+                    "designerId": "af32e92a-4186-4b3e-8e53-6e76807fbd86"
+                }
+            ]
+        },
+        {
+            "type": "Ext.grid.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "forceFit": true,
+                "store": "Lugar",
+                "title": ""
+            },
+            "configAlternates": {
+                "forceFit": "boolean",
+                "store": "store",
+                "title": "string"
+            },
+            "name": "MyGridPanel",
+            "designerId": "6e6e3491-96df-445f-8cae-a04c0690468f",
+            "cn": [
+                {
+                    "type": "Ext.grid.column.Number",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "id",
+                        "text": "ID"
+                    },
+                    "configAlternates": {
+                        "dataIndex": "datafield",
+                        "text": "string"
+                    },
+                    "name": "MyNumberColumn1",
+                    "designerId": "5276ed68-11cd-4be1-a2ff-5d84e2ac2fb5"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "descripcion",
+                        "text": "Descripcion"
+                    },
+                    "configAlternates": {
+                        "dataIndex": "datafield",
+                        "text": "string"
+                    },
+                    "name": "MyColumn1",
+                    "designerId": "d68e0992-6a1b-4000-87e7-cfda4337bb69"
+                },
+                {
+                    "type": "Ext.grid.column.Number",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "estado",
+                        "text": "Estado"
+                    },
+                    "configAlternates": {
+                        "dataIndex": "datafield",
+                        "text": "string"
+                    },
+                    "name": "MyNumberColumn2",
+                    "designerId": "668f1fae-a0fc-4e65-8e47-ad55a3f30079"
+                },
+                {
+                    "type": "Ext.grid.column.Number",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "aforo",
+                        "text": "Aforo"
+                    },
+                    "configAlternates": {
+                        "dataIndex": "datafield",
+                        "text": "string"
+                    },
+                    "name": "MyNumberColumn3",
+                    "designerId": "3f6df608-ed8a-4980-a132-9b29b0369460"
+                },
+                {
+                    "type": "Ext.grid.column.Number",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "ubicacion",
+                        "text": "Ubicacion"
+                    },
+                    "configAlternates": {
+                        "dataIndex": "datafield",
+                        "text": "string"
+                    },
+                    "name": "MyNumberColumn4",
+                    "designerId": "c3b547fb-a94a-4d17-896f-b5fe5f4bf8b8"
+                }
+            ]
+        }
+    ]
+}

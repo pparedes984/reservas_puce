@@ -1,0 +1,83 @@
+{
+    "type": "Ext.data.Store",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Rol",
+        "model": "Rol_model",
+        "storeId": "Rol"
+    },
+    "configAlternates": {
+        "designer|userClassName": "string",
+        "model": "model",
+        "storeId": "string"
+    },
+    "name": "Usuario1",
+    "designerId": "99cff4bb-b1ff-487c-9ceb-b9c2af15688c",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "actionMethods": [
+                    "{\"create\":\"POST\",\"read\":\"POST\",\"update\":\"POST\",\"destroy\":\"POST\"}"
+                ],
+                "api": [
+                    "{create: '../servidor/reservas_puce/usuariorol/create',",
+                    "                    read: '../servidor/reservas_puce/usuariorol/get',",
+                    "                    update: '../servidor/reservas_puce/usuariorol/update',",
+                    "                    destroy: '../servidor/reservas_puce/usuariorol/delete'}"
+                ]
+            },
+            "configAlternates": {
+                "actionMethods": "object",
+                "api": "object"
+            },
+            "name": "MyAjaxProxy3",
+            "designerId": "1bb305b8-2b1b-4ef2-a166-bf3a344a4b5d",
+            "cn": [
+                {
+                    "type": "Ext.data.writer.Json",
+                    "reference": {
+                        "name": "writer",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "encode": true,
+                        "rootProperty": "data"
+                    },
+                    "configAlternates": {
+                        "encode": "boolean",
+                        "rootProperty": "string"
+                    },
+                    "name": "MyJsonWriter3",
+                    "designerId": "29934fe5-49ae-4218-8d81-c6cfb0a90d38"
+                },
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "rootProperty": "data"
+                    },
+                    "configAlternates": {
+                        "rootProperty": "string"
+                    },
+                    "name": "MyJsonReader3",
+                    "designerId": "5d1468bf-4543-4d32-9a0c-8157d30484c3"
+                }
+            ]
+        }
+    ]
+}

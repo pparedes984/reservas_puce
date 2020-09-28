@@ -1,0 +1,342 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "pnltipo",
+        "designer|userClassName": "pnlTipo",
+        "layout": "fit",
+        "title": "Tipo"
+    },
+    "configAlternates": {
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "layout": "string",
+        "title": "string"
+    },
+    "name": "MyPanel",
+    "designerId": "badee9ee-8e3f-4e13-8c75-101c44e741bb",
+    "viewControllerInstanceId": "39595c08-8d06-4cbd-9057-54b05c319deb",
+    "viewModelInstanceId": "68f956e3-17d0-4093-81b1-6bc998b1022b",
+    "cn": [
+        {
+            "type": "Ext.toolbar.Toolbar",
+            "reference": {
+                "name": "dockedItems",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dock": "top"
+            },
+            "configAlternates": {
+                "dock": "string"
+            },
+            "name": "MyToolbar",
+            "designerId": "ae6f69f5-26e8-4bc0-892b-0428bc6db700",
+            "cn": [
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "id": "btnTipoNuevo",
+                        "layout|flex": null,
+                        "text": "Nuevo",
+                        "width": 100
+                    },
+                    "configAlternates": {
+                        "id": "string",
+                        "layout|flex": "number",
+                        "text": "string",
+                        "width": "auto"
+                    },
+                    "name": "MyButton2",
+                    "designerId": "9d714525-8772-4a25-a84c-0c57a695f28d",
+                    "cn": [
+                        {
+                            "type": "viewcontrollereventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onBtnTipoNuevoClick",
+                                "implHandler": [
+                                    "if(!Ext.getCmp('wndNuevoTipo'))",
+                                    "        {",
+                                    "            var win = Ext.create('reservas_puce.view.wndNuevoTipo');",
+                                    "            win.show();",
+                                    "        }"
+                                ],
+                                "name": "click",
+                                "scope": "me"
+                            },
+                            "configAlternates": {
+                                "fn": "string",
+                                "implHandler": "code",
+                                "name": "string",
+                                "scope": "string"
+                            },
+                            "name": "onBtnTipoNuevoClick",
+                            "designerId": "d7a8b0d6-5f65-4087-8675-b1a73a822430"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "id": "btnTipoEliminar",
+                        "layout|flex": null,
+                        "text": "Eliminar",
+                        "width": 100
+                    },
+                    "configAlternates": {
+                        "id": "string",
+                        "layout|flex": "number",
+                        "text": "string",
+                        "width": "auto"
+                    },
+                    "name": "MyButton5",
+                    "designerId": "4eb70030-c381-4edc-823d-5a22ff95ccd8",
+                    "cn": [
+                        {
+                            "type": "viewcontrollereventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onBtnTipoEliminarClick",
+                                "implHandler": [
+                                    "var g = Ext.getCmp('grdTipo');",
+                                    "        var arrayKeys = g.getSelectionModel().selected.items;",
+                                    "        var indice = g.getSelectionModel().selectionStartIdx;",
+                                    "",
+                                    "        if(arrayKeys.length === 0)",
+                                    "        Ext.Msg.alert('Error', 'Debe escoger un tipo');",
+                                    "        else",
+                                    "        {",
+                                    "            Ext.Msg.show({",
+                                    "                title: 'Atención',",
+                                    "                msg: 'Está seguro de borrar este registro?',",
+                                    "                icon: Ext.Msg.QUESTION,",
+                                    "                buttonText: {",
+                                    "                    yes: 'Si',",
+                                    "                    no: 'No'",
+                                    "                },",
+                                    "                buttons: Ext.Msg.YESNO,",
+                                    "                fn: function (btn) {",
+                                    "                    if (btn == 'yes') {",
+                                    "            var store = g.getStore();",
+                                    "            var rec = g.selection;",
+                                    "            Ext.Ajax.request({",
+                                    "                url: '../servidor/reservas_puce/tipo/delete',",
+                                    "                method:\"post\",",
+                                    "                params: {",
+                                    "                    usuario: rec.data.usuario",
+                                    "                },",
+                                    "                success: function( result, request ) {",
+                                    "                    var responseData = Ext.JSON.decode(result.responseText);",
+                                    "                    if(responseData.success)",
+                                    "                    {",
+                                    "",
+                                    "                        store.remove(rec);",
+                                    "                        store.sync(",
+                                    "                        {",
+                                    "                            params:{",
+                                    "                                id: rec.data.id",
+                                    "                            },",
+                                    "                            success: function(batch, success)",
+                                    "                            {",
+                                    "                                store.commitChanges();",
+                                    "                                store.load();",
+                                    "                                Ext.Msg.alert('Alerta', 'Se ha eliminado el registro exitosamente');",
+                                    "                            },",
+                                    "",
+                                    "                            failure: function(batch, success)",
+                                    "                            {",
+                                    "                                Ext.Msg.alert('Error', 'Hubor un error');",
+                                    "                            }",
+                                    "                        });",
+                                    "                    }",
+                                    "                    else",
+                                    "                    {",
+                                    "                        Ext.Msg.alert('Alerta','Este registro tiene datos asociados.');",
+                                    "                    }",
+                                    "                },",
+                                    "",
+                                    "                failure: function(response, opts) {",
+                                    "                    console.log('server-side failure with status code ' + response.status);",
+                                    "                }",
+                                    "            });}}});",
+                                    "        }"
+                                ],
+                                "name": "click",
+                                "scope": "me"
+                            },
+                            "configAlternates": {
+                                "fn": "string",
+                                "implHandler": "code",
+                                "name": "string",
+                                "scope": "string"
+                            },
+                            "name": "onBtnTipoEliminarClick",
+                            "designerId": "7284d4ba-719a-4269-b4af-9984e2a75efd"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Ext.grid.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "forceFit": true,
+                "id": "grdTipo",
+                "store": "Tipo",
+                "title": ""
+            },
+            "configAlternates": {
+                "forceFit": "boolean",
+                "id": "string",
+                "store": "store",
+                "title": "string"
+            },
+            "name": "MyGridPanel",
+            "designerId": "101dfd72-31f0-4b59-b637-0bfec39d0ff1",
+            "cn": [
+                {
+                    "type": "Ext.grid.View",
+                    "reference": {
+                        "name": "viewConfig",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "name": "MyGridView2",
+                    "designerId": "31dc99d6-dad6-4b40-8ece-5e8d5dd3b06c"
+                },
+                {
+                    "type": "Ext.grid.column.Number",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "id",
+                        "hidden": true,
+                        "text": "ID"
+                    },
+                    "configAlternates": {
+                        "dataIndex": "datafield",
+                        "hidden": "boolean",
+                        "text": "string"
+                    },
+                    "name": "MyNumberColumn1",
+                    "designerId": "b8799a7b-b0c0-43e0-8eeb-d06519bd675e"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "descripcion",
+                        "text": "Descripcion"
+                    },
+                    "configAlternates": {
+                        "dataIndex": "datafield",
+                        "text": "string"
+                    },
+                    "name": "MyColumn8",
+                    "designerId": "669d55f6-8eba-42dc-9ebe-45dc72cb80d4",
+                    "cn": [
+                        {
+                            "type": "Ext.form.field.Text",
+                            "reference": {
+                                "name": "editor",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "name": "MyTextField4",
+                            "designerId": "92994f57-9000-4672-abc9-659616de33cd"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.grid.plugin.RowEditing",
+                    "reference": {
+                        "name": "plugins",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "name": "MyRowEditingPlugin2",
+                    "designerId": "17bdce3e-b8c4-4f40-9b71-77983485f33a",
+                    "cn": [
+                        {
+                            "type": "viewcontrollereventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onRowEditingEdit",
+                                "implHandler": [
+                                    "var store = Ext.getStore('Tipo');",
+                                    "        var rec = context.record;",
+                                    "        store.sync(",
+                                    "        {",
+                                    "            params:{",
+                                    "                id: rec.data.id",
+                                    "            },",
+                                    "",
+                                    "            success: function(batch, success)",
+                                    "            {",
+                                    "                store.load();",
+                                    "            },",
+                                    "",
+                                    "            failure: function(batch, success)",
+                                    "            {",
+                                    "                Ext.Msg.alert('Error', 'Hubor un error');",
+                                    "            }",
+                                    "        });"
+                                ],
+                                "name": "edit",
+                                "scope": "me"
+                            },
+                            "configAlternates": {
+                                "fn": "string",
+                                "implHandler": "code",
+                                "name": "string",
+                                "scope": "string"
+                            },
+                            "name": "onRowEditingEdit",
+                            "designerId": "7c49c69d-9fea-4acc-ad64-78e35ebcd201"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

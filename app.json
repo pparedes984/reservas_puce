@@ -1,0 +1,62 @@
+{
+   "name": "reservas_puce",
+   "indexHtmlPath": "index.html",
+   "classpath": "${app.dir}/app",
+   "overrides": "${app.dir}/overrides",
+   "framework": "ext",
+   "theme": "ext-theme-crisp-e6e4d544-8e0f-4803-85ef-a49d4a514205",
+   "requires": [],
+   "sass": {
+      "namespace": "reservas_puce"
+   },
+   "js": [
+      {
+         "path": "${framework.dir}/build/ext-all-rtl-debug.js"
+      },
+      {
+         "path": "app.js",
+         "bundle": true
+      }
+   ],
+   "css": [
+      {
+         "path": "bootstrap.css",
+         "bootstrap": true
+      }
+   ],
+   "production": {},
+   "testing": {},
+   "development": {},
+   "bootstrap": {
+      "base": "${app.dir}",
+      "manifest": "bootstrap.json",
+      "microloader": "bootstrap.js",
+      "css": "bootstrap.css"
+   },
+   "output": {
+      "base": "${workspace.build.dir}/${build.environment}/${app.name}"
+   },
+   "appCache": {
+      "cache": [
+         "index.html"
+      ],
+      "network": [
+         "*"
+      ],
+      "fallback": []
+   },
+   "resources": [],
+   "ignore": [
+      "(^|/)CVS(/?$|/.*?$)"
+   ],
+   "archivePath": "archive",
+   "slicer": {
+      "js": [
+         {
+            "path": "${app.dir}/sass/example/custom.js",
+            "isWidgetManifest": true
+         }
+      ]
+   },
+   "id": "682e8293-a511-411c-bd56-c691449b8bba"
+}
